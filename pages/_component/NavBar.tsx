@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Light from "../assets/light_mode.svg";
-import Dark from "../assets/dark_mode.svg";
+import Light from "../_assets/light_mode.svg";
+import Dark from "../_assets/dark_mode.svg";
 
 import { css } from "@emotion/react";
 import { roboto_bold } from "../_util/font";
@@ -51,14 +51,10 @@ export default function NavBar() {
         "& .title": {
           fontSize: "1.2rem",
           marginRight: "1.2rem",
-          color: "black",
-          textDecoration: "none",
         },
         "& .category": {
           fontSize: "0.875rem",
           padding: "0 1.2rem",
-          color: "black",
-          textDecoration: "none",
         },
         "& .mode-btn": {
           width: "25px",
@@ -74,7 +70,7 @@ export default function NavBar() {
       })}
     >
       <div className="container">
-        <div>
+        <div style={{ textDecoration: "none" }}>
           <Link href="/" className={`title ${roboto_bold.className}`}>
             BASIC LOADING
           </Link>
