@@ -1,6 +1,6 @@
 // /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { roboto_bold } from "./util/font";
+import { roboto_bold } from "./_util/font";
 
 export default function Home() {
   return (
