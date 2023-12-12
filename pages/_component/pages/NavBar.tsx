@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Light from "../_assets/light_mode.svg";
-import Dark from "../_assets/dark_mode.svg";
+import Light from "../../_assets/light_mode.svg";
+import Dark from "../../_assets/dark_mode.svg";
 
 import { css } from "@emotion/react";
-import { roboto_bold } from "../_util/font";
+import { roboto_bold } from "../../_util/font";
 import { useState } from "react";
 
 export default function NavBar() {
