@@ -1,14 +1,23 @@
 import DocsLayout from "@/pages/_component/layout/DocsLayout";
 import CodeBlock from "@/pages/_component/pages/docs/CodeBlock";
+import CodeEditor from "@/pages/_component/pages/docs/CodeEditor";
 import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
 import { roboto_bold } from "@/pages/_util/font";
 import { css } from "@emotion/react";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const DocsComponent = () => {
-  // const { name }: { name: string } = useParams();
-  const name = "Skeleton";
+  const [name, setName] = useState("");
+  const params = useParams();
+
+  useEffect(() => {
+    if (params) {
+      const name = params.name as string;
+      setName(name);
+    }
+  }, [params]);
 
   return (
     <DocsLayout>
@@ -66,7 +75,8 @@ const DocsComponent = () => {
           <div className="docs-content-container">
             <div className={`${roboto_bold.className}`}>• Code</div>
             <div className="code-block">
-              <CodeBlock title={name} />
+              {/* <CodeBlock title={name} /> */}
+              <CodeEditor />
             </div>
           </div>
           <div className="docs-content-container">
