@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import SideMenu from "../../docs/SideMenu";
+import SideMenu from "../pages/docs/SideMenu";
 import { css } from "@emotion/react";
 import { AppProps } from "next/app";
 
