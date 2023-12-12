@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { css } from "@emotion/react";
-import { roboto_bold } from "../_util/font";
+import { roboto_bold } from "../../../_util/font";
 
 export default function SideMenu() {
   //   const { name } = useParams();
