@@ -1,6 +1,7 @@
 import { css } from "@emotion/react";
 import { roboto_bold } from "../_util/font";
 import DocsLayout from "../_component/layout/DocsLayout";
+import CodeBlock from "../_component/pages/docs/CodeBlock";
 
 const Docs = () => {
   return (
@@ -24,6 +25,8 @@ const Docs = () => {
           <div className={`doc-title ${roboto_bold.className}`}>
             Get Started
           </div>
+          <CodeBlock text="npm install basic-loading" />
+          <CodeBlock text="yarn add basic-loading" />
         </div>
       </div>
     </DocsLayout>
