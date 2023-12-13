@@ -1,9 +1,87 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+// /** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import { roboto_bold } from "./_util/font";
 
 export default function Home() {
-  return <div>hello world</div>;
+  return (
+    <div
+      css={css({
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        "& footer": {
+          width: "100%",
+          height: "100px",
+          fontSize: "1.2rem",
+          borderTop: "1px solid",
+          paddingTop: "20px",
+        },
+      })}
+    >
+      <Intro1 />
+      <Intro2 />
+      <footer className={roboto_bold.className}>BASIC LOADING</footer>
+    </div>
+  );
+}
+
+function Intro1() {
+  return (
+    <div
+      css={css({
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        textAlign: "center",
+        margin: "12px 0",
+        "& .title": {
+          lineHeight: "4.2rem",
+          fontSize: "4.5rem",
+        },
+        "& .subTitle": {
+          fontSize: "1.2rem",
+          padding: "24px 0",
+        },
+      })}
+    >
+      <div className={`title ${roboto_bold.className}`}>
+        Basic & Simple
+        <br />
+        Loading Component
+      </div>
+      <div className="subTitle">React Loading UI Component Library</div>
+    </div>
+  );
+}
+
+function Intro2() {
+  return (
+    <div
+      css={css({
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        "& .title": {
+          lineHeight: "4rem",
+          fontSize: "3.5rem",
+        },
+        "& .subTitle": {
+          fontSize: "1.2rem",
+          padding: "36px 0",
+        },
+      })}
+    >
+      <div className={`title ${roboto_bold.className}`}>
+        Custom as you want,
+        <br />
+        Combine as you need.
+      </div>
+    </div>
+  );
 }
