@@ -36,7 +36,7 @@ export default function DotBounce() {
             backgroundColor: color,
             animation: `loading 1s ${timing} ${count}`,
             animationDelay: "0s",
-            margin: size / 3.5,
+            margin: size / 2.5,
           }}
         ></div>
         <div
@@ -47,7 +47,7 @@ export default function DotBounce() {
             backgroundColor: color,
             animation: `loading 1s ${timing} ${count}`,
             animationDelay: "0.25s",
-            margin: size / 3.5,
+            margin: size / 2.5,
           }}
         ></div>
         <div
@@ -58,7 +58,7 @@ export default function DotBounce() {
             backgroundColor: color,
             animation: `loading 1s ${timing} ${count}`,
             animationDelay: "0.5s",
-            margin: size / 3.5,
+            margin: size / 2.5,
           }}
         ></div>
       </div>

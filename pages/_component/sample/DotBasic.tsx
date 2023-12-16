@@ -6,7 +6,7 @@ interface Datatype {
 }
 
 export default function DotBasic() {
-  const size = 12;
+  const size = 15;
   const color = "black";
   const timing = "ease-in-out";
   const count = "infinite";

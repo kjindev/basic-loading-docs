@@ -1,4 +1,5 @@
 export default function SpinnerBasic() {
+  const size = 100;
   const animation = `
     @keyframes spin {
       from{
@@ -15,8 +16,8 @@ export default function SpinnerBasic() {
       <style>{animation}</style>
       <div
         style={{
-          width: "100px",
-          height: "100px",
+          width: size,
+          height: size,
           border: "7px solid rgba(112, 112, 112, 0.3)",
           borderBottomColor: "black",
           borderRadius: "50%",

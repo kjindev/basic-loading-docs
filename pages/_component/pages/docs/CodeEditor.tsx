@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { Editor } from "@monaco-editor/react";
 
-export default function CodeEditor() {
+export default function CodeEditor({ title }: { title: string }) {
   const option = {
     fontSize: 15,
     minimap: { enabled: false },
@@ -15,14 +15,14 @@ export default function CodeEditor() {
     lineNumbers: false,
   };
 
-  const code = `// import DotBasic from "basic-loading";
+  const code = `// import ${title} from "basic-loading";
 
 export default function App() {
   const option = {
 
   }
 
-  // return <DotBasic option={option} />;
+  // return <${title} option={option} />;
 }
   `;
   return (

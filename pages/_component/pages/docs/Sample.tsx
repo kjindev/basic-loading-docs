@@ -1,3 +1,4 @@
+// import { DotBasic, DotBounce, Fade } from "basic-loading";
 import DotBasic from "../../sample/DotBasic";
 import DotBounce from "../../sample/DotBounce";
 import Fade from "../../sample/Fade";
@@ -13,6 +14,11 @@ interface PropsType {
 }
 
 export default function Sample({ title }: PropsType) {
+  const option = {
+    size: 12,
+    color: "green",
+  };
+
   if (title === "Skeleton") {
     return <SkeletonSample />;
   } else if (title === "DotBasic") {

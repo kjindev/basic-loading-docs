@@ -26,6 +26,7 @@ const Docs = () => {
             Get Started
           </div>
           <CodeBlock text="npm install basic-loading" />
+          <span>Or</span>
           <CodeBlock text="yarn add basic-loading" />
         </div>
       </div>

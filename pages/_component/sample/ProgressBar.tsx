@@ -1,11 +1,18 @@
 export default function ProgressBar() {
+  const width = 300;
+  const height = width * 0.1;
+  const afterWidth = width * 0.95;
+  const afterHeight = height * 0.5;
+  const margin = width * 0.025;
+  const bgColor = "#e0e0e0";
+  const barColor = "#b3b3b3";
   const animation = `
     @keyframes progressbar {
       0% {
-        width: 15%;
+        width: 0%;
       }
       100% {
-        width: 285px;
+        width: 95%;
       }
     }
   `;
@@ -13,17 +20,24 @@ export default function ProgressBar() {
     <div>
       <style>{animation}</style>
       <div
-        style={{ borderRadius: "30px", width: 300, height: 30 }}
-        className="relative bg-[#e0e0e0]"
+        style={{
+          position: "relative",
+          backgroundColor: bgColor,
+          width: width,
+          height: height,
+        }}
       >
         <div
           style={{
-            borderRadius: "30px",
-            width: 285,
-            height: 20,
+            position: "absolute",
+            backgroundColor: barColor,
+            top: "50%",
+            transform: "translateY(-50%)",
+            marginLeft: margin,
+            width: afterWidth,
+            height: afterHeight,
             animation: "progressbar 3s linear",
           }}
-          className="absolute top-[50%] translate-y-[-50%] ml-[7.5px] bg-[#3b3b3b]"
         ></div>
       </div>
     </div>

@@ -32,6 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
+          ["basic-loading", "npm:0.0.18"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:1e5b7a9eea68431493ed1c48cca26a9982a049429f7f335e69ec7f72a8001baabaf38b00af4023748e80edbc6564b227ab3a79344350087479416db7f75e8b9d#npm:14.0.4"],\
           ["next", "virtual:1e5b7a9eea68431493ed1c48cca26a9982a049429f7f335e69ec7f72a8001baabaf38b00af4023748e80edbc6564b227ab3a79344350087479416db7f75e8b9d#npm:14.0.4"],\
@@ -623,6 +624,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
+      ["npm:16.18.68", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-node-npm-16.18.68-56f72825c0-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:16.18.68"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:20.10.4", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-node-npm-20.10.4-45b062d723-10c0.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -660,6 +668,16 @@ const RAW_RUNTIME_STATE =
           ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:18.2.45", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-react-npm-18.2.45-fef6344d31-10c0.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:18.2.45"],\
+          ["@types/prop-types", "npm:15.7.11"],\
+          ["@types/scheduler", "npm:0.16.8"],\
+          ["csstype", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@types/react-dom", [\
@@ -667,6 +685,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-react-dom-npm-18.2.17-d5475408ae-10c0.zip/node_modules/@types/react-dom/",\
         "packageDependencies": [\
           ["@types/react-dom", "npm:18.2.17"],\
+          ["@types/react", "npm:18.2.43"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:18.2.18", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-react-dom-npm-18.2.18-b316a8af22-10c0.zip/node_modules/@types/react-dom/",\
+        "packageDependencies": [\
+          ["@types/react-dom", "npm:18.2.18"],\
           ["@types/react", "npm:18.2.43"]\
         ],\
         "linkType": "HARD"\
@@ -1039,6 +1065,21 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/balanced-match-npm-1.0.2-a53c126459-10c0.zip/node_modules/balanced-match/",\
         "packageDependencies": [\
           ["balanced-match", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["basic-loading", [\
+      ["npm:0.0.18", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/basic-loading-npm-0.0.18-5e87cff877-10c0.zip/node_modules/basic-loading/",\
+        "packageDependencies": [\
+          ["basic-loading", "npm:0.0.18"],\
+          ["@types/node", "npm:16.18.68"],\
+          ["@types/react", "npm:18.2.45"],\
+          ["@types/react-dom", "npm:18.2.18"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:5e87cff8778ca87514d6b6df8a4988ad0a8f75d1bc6c0a7cb1207e4f33f95e5e12975f56fdd5fa2a0e8b8a880c4f99110b2ded2233912829b34e4a8f79e68b18#npm:18.2.0"],\
+          ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2949,6 +2990,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
+          ["basic-loading", "npm:0.0.18"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:1e5b7a9eea68431493ed1c48cca26a9982a049429f7f335e69ec7f72a8001baabaf38b00af4023748e80edbc6564b227ab3a79344350087479416db7f75e8b9d#npm:14.0.4"],\
           ["next", "virtual:1e5b7a9eea68431493ed1c48cca26a9982a049429f7f335e69ec7f72a8001baabaf38b00af4023748e80edbc6564b227ab3a79344350087479416db7f75e8b9d#npm:14.0.4"],\
@@ -3264,6 +3306,21 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["react-dom", "virtual:1e5b7a9eea68431493ed1c48cca26a9982a049429f7f335e69ec7f72a8001baabaf38b00af4023748e80edbc6564b227ab3a79344350087479416db7f75e8b9d#npm:18.2.0"],\
           ["@types/react", "npm:18.2.43"],\
+          ["loose-envify", "npm:1.4.0"],\
+          ["react", "npm:18.2.0"],\
+          ["scheduler", "npm:0.23.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:5e87cff8778ca87514d6b6df8a4988ad0a8f75d1bc6c0a7cb1207e4f33f95e5e12975f56fdd5fa2a0e8b8a880c4f99110b2ded2233912829b34e4a8f79e68b18#npm:18.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-cc944a87f2/5/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
+        "packageDependencies": [\
+          ["react-dom", "virtual:5e87cff8778ca87514d6b6df8a4988ad0a8f75d1bc6c0a7cb1207e4f33f95e5e12975f56fdd5fa2a0e8b8a880c4f99110b2ded2233912829b34e4a8f79e68b18#npm:18.2.0"],\
+          ["@types/react", "npm:18.2.45"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.0"]\
@@ -3843,6 +3900,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["typescript", [\
+      ["patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/typescript-patch-32ada147aa-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/typescript-patch-4778c7998b-10c0.zip/node_modules/typescript/",\
         "packageDependencies": [\

@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function SpinnerDot() {
+  const size = 90;
+  const dotSize = size * 0.12;
+  const dotPosition = dotSize / 2;
   const animation = `
     @keyframes spin {
       from{
@@ -14,11 +17,11 @@ export default function SpinnerDot() {
 
   return (
     <div style={{ position: "relative" }}>
-      <style>{animation}</style>
+      {/* <style>{animation}</style> */}
       <div
         style={{
-          width: "100px",
-          height: "100px",
+          width: size,
+          height: size,
           border: "3px solid #00000090",
           borderRadius: "50%",
           display: "flex",
@@ -28,11 +31,11 @@ export default function SpinnerDot() {
       >
         <div
           style={{
-            width: "12px",
-            height: "12px",
+            width: dotSize,
+            height: dotSize,
             backgroundColor: "#000000",
             borderRadius: "50%",
-            transform: "translateY(-6px)",
+            // transform: `translateY(-70%)`,
           }}
         ></div>
       </div>
