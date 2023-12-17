@@ -75,8 +75,8 @@ const DocsComponent = () => {
           <div className="docs-content-container">
             <div className={`${roboto_bold.className}`}>• Code</div>
             <div className="code-block">
-              {/* <CodeBlock title={name} /> */}
-              <CodeEditor title={name} />
+              <CodeBlock title={name} />
+              {/* <CodeEditor title={name} /> */}
             </div>
           </div>
           <div className="docs-content-container">

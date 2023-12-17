@@ -1,5 +1,7 @@
 import { css } from "@emotion/react";
 import { Editor } from "@monaco-editor/react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function CodeEditor({ title }: { title: string }) {
   const option = {
@@ -15,16 +17,16 @@ export default function CodeEditor({ title }: { title: string }) {
     lineNumbers: false,
   };
 
-  const code = `// import ${title} from "basic-loading";
+  const code = `import ${title} from "basic-loading";
 
 export default function App() {
   const option = {
-
+  
   }
+  
+  return <${title} option={option} />;
+}`;
 
-  // return <${title} option={option} />;
-}
-  `;
   return (
     <div
       css={css({
@@ -36,7 +38,7 @@ export default function App() {
       <Editor
         height="250px"
         defaultLanguage="typescript"
-        defaultValue={code}
+        value={code}
         theme="vs-dark"
         options={option}
       />
