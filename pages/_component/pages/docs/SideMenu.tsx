@@ -8,10 +8,9 @@ export default function SideMenu() {
   //   const pathname = usePathname();
 
   const list = [
-    "SpinnerBasic",
-    "SpinnerCircle",
-    "DotBounce",
-    "DotBasic",
+    "Spinner",
+    "BounceDot",
+    "BasicDot",
     "Skeleton",
     "ProgressBar",
     "Wave",

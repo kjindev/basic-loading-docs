@@ -1,42 +1,71 @@
-// import { DotBasic, DotBounce, Fade } from "basic-loading";
-import DotBasic from "../../sample/DotBasic";
-import DotBounce from "../../sample/DotBounce";
-import Fade from "../../sample/Fade";
-import ProgressBar from "../../sample/ProgressBar";
-import Pulse from "../../sample/Pulse";
-import { SkeletonSample } from "../../sample/Skeleton";
-import SpinnerBasic from "../../sample/SpinnerBasic";
-import SpinnerDot from "../../sample/SpinnerDot";
-import Wave from "../../sample/Wave";
+import {
+  BasicDot,
+  BounceDot,
+  Fade,
+  ProgressBar,
+  Pulse,
+  Skeleton,
+  Spinner,
+  Wave,
+} from "basic-loading";
 
 interface PropsType {
   title: string;
 }
 
 export default function Sample({ title }: PropsType) {
-  const option = {
+  const dot = {
     size: 12,
     color: "green",
   };
 
+  const progressBar = {
+    width: 300,
+    bgColor: "black",
+    barColor: "blue",
+  };
+
+  const skeleton = {
+    width: "200px",
+    height: "200px",
+    speed: 1.2,
+    color: ["black", "blue"],
+    borderRadius: "20px",
+  };
+
+  const spinner = {
+    size: 20,
+    bgColor: "black",
+    barColor: "blue",
+    thickness: 5,
+  };
+
+  const pulse = {
+    size: 20,
+    color: "black",
+  };
+
+  const wave = {
+    height: 30,
+    color: "blue",
+  };
+
   if (title === "Skeleton") {
-    return <SkeletonSample />;
-  } else if (title === "DotBasic") {
-    return <DotBasic />;
-  } else if (title === "DotBounce") {
-    return <DotBounce />;
+    return <Skeleton option={skeleton} />;
+  } else if (title === "BasicDot") {
+    return <BasicDot option={dot} />;
+  } else if (title === "BounceDot") {
+    return <BounceDot option={dot} />;
   } else if (title === "ProgressBar") {
-    return <ProgressBar />;
+    return <ProgressBar option={progressBar} />;
   } else if (title === "Fade") {
-    return <Fade />;
-  } else if (title === "SpinnerBasic") {
-    return <SpinnerBasic />;
-  } else if (title === "SpinnerCircle") {
-    return <SpinnerDot />;
+    return <Fade speed={1.2}>Loading</Fade>;
+  } else if (title === "Spinner") {
+    return <Spinner option={spinner} />;
   } else if (title === "Pulse") {
-    return <Pulse />;
+    return <Pulse option={pulse} />;
   } else if (title === "Wave") {
-    return <Wave />;
+    return <Wave option={wave} />;
   } else {
     return <></>;
   }
