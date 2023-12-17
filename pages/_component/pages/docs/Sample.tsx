@@ -16,38 +16,38 @@ interface PropsType {
 export default function Sample({ title }: PropsType) {
   const dot = {
     size: 12,
-    color: "green",
+    color: "#7c3aed",
   };
 
   const progressBar = {
     width: 300,
-    bgColor: "black",
-    barColor: "blue",
+    bgColor: "#ddd6fe",
+    barColor: "#7c3aed",
   };
 
   const skeleton = {
-    width: "200px",
-    height: "200px",
+    width: "100px",
+    height: "100px",
     speed: 1.2,
-    color: ["black", "blue"],
+    color: ["#ddd6fe", "#c4b5fd"],
     borderRadius: "20px",
   };
 
   const spinner = {
-    size: 20,
-    bgColor: "black",
-    barColor: "blue",
-    thickness: 5,
+    size: 50,
+    bgColor: "#7c3aed",
+    barColor: "#ddd6fe",
+    thickness: 7,
   };
 
   const pulse = {
-    size: 20,
-    color: "black",
+    size: 100,
+    color: "#a78bfa",
   };
 
   const wave = {
     height: 30,
-    color: "blue",
+    color: "#7c3aed",
   };
 
   if (title === "Skeleton") {
@@ -59,7 +59,7 @@ export default function Sample({ title }: PropsType) {
   } else if (title === "ProgressBar") {
     return <ProgressBar option={progressBar} />;
   } else if (title === "Fade") {
-    return <Fade speed={1.2}>Loading</Fade>;
+    return <Fade speed={1.2}>LOADING</Fade>;
   } else if (title === "Spinner") {
     return <Spinner option={spinner} />;
   } else if (title === "Pulse") {

@@ -41,7 +41,7 @@ export default function SideMenu() {
           color: "black",
         },
         "& .sideMenu-content:hover": {
-          color: "blue",
+          color: "#7c3aed",
         },
       })}
     >

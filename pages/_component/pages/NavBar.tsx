@@ -81,9 +81,9 @@ export default function NavBar() {
             <Link href="/docs" className="category">
               Docs
             </Link>
-            <Link href="/templates" className="category">
+            {/* <Link href="/templates" className="category">
               Templates
-            </Link>
+            </Link> */}
           </span>
         </div>
         <div onClick={toggleMode} className="mode-btn">
