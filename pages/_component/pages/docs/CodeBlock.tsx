@@ -1,46 +1,13 @@
+import { valueSate } from "@/pages/_state/state";
+import { componentList } from "@/pages/_util/docs";
 import { roboto } from "@/pages/_util/font";
 import { css } from "@emotion/react";
 import { Editor } from "@monaco-editor/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSetRecoilState } from "recoil";
 
 export default function CodeBlock({ title }: { title: string }) {
-  // const title = "skeleton";
-  const [value, setValue] = useState(10);
-
-  const changeValue = (e: any) => {
-    setValue(e.target.value);
-  };
-  const option = {
-    fontSize: 15,
-    minimap: { enabled: false },
-    overviewRulerLanes: 0,
-    scrollbar: {
-      vertical: "hidden",
-      horizontal: "hidden",
-      handleMouseWheel: false,
-    },
-    quickSuggestions: false,
-    lineNumbers: false,
-    readOnly: true,
-  };
-
-  // return (
-  //   <div
-  //     css={css({
-  //       margin: "1rem 0",
-  //       padding: "1rem 1.5rem",
-  //       backgroundColor: "#1E1E1E",
-  //       borderRadius: "0.875rem",
-  //       color: "white",
-  //       fontSize: "0.875rem",
-  //       letterSpacing: "0.05em",
-  //       fontWeight: "100",
-  //     })}
-  //   >
-  //     <div>{text}</div>
-  //   </div>
-  // );
-  // const targetList = list.find((item: any) => item.title === title);
+  const optionList = componentList.find((item: any) => item.title === title);
 
   return (
     <div
@@ -96,12 +63,12 @@ export default function CodeBlock({ title }: { title: string }) {
         </div>
 
         <div>
-          <form>
+          {/* <form onSubmit={submitValue}>
             <code>{`         size`}</code>
             <code className="cyan">{": "}</code>
             <input onChange={changeValue} value={value} />
-          </form>
-          {/* {targetList?.option?.map((item: any, index: number) => {
+          </form> */}
+          {optionList?.option?.map((item: any, index: number) => {
             const key: string = Object.keys(item)[0];
             const value: any = Object.values(item)[0];
             return (
@@ -120,7 +87,7 @@ export default function CodeBlock({ title }: { title: string }) {
                 <code className="cyan">{","}</code>
               </div>
             );
-          })} */}
+          })}
         </div>
         <div>
           <code className="purple">{"     }"}</code>

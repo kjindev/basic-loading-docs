@@ -1,3 +1,4 @@
+import { valueSate } from "@/pages/_state/state";
 import {
   BasicDot,
   BounceDot,
@@ -8,6 +9,7 @@ import {
   Spinner,
   Wave,
 } from "basic-loading";
+import { useRecoilValue } from "recoil";
 
 interface PropsType {
   title: string;
