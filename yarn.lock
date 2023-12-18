@@ -812,9 +812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"basic-loading@npm:^0.0.23":
-  version: 0.0.23
-  resolution: "basic-loading@npm:0.0.23"
+"basic-loading@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "basic-loading@npm:1.0.1"
   dependencies:
     "@types/node": "npm:^16.18.65"
     "@types/react": "npm:^18.2.38"
@@ -822,7 +822,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^4.9.5"
-  checksum: 9576f43e12e23a0a2765732967483d1243677c02c28465a1797b4c5652fda863a87c370c14526036b1c8d67ecb336a3a473f1f01a64df3cdf090b3ddf5ba5957
+  checksum: 8735666595f81ea68200ab28aaf9ebaf0bbee019d20291e3cbb55182a41b947e7837510e6621172404e8836293cec491b939d75a9d5fd6ed9bfd345329159d57
   languageName: node
   linkType: hard
 
@@ -1752,6 +1752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hamt_plus@npm:1.0.2":
+  version: 1.0.2
+  resolution: "hamt_plus@npm:1.0.2"
+  checksum: c5aa5cc08228e8cc2a90150fef680bd5b09f16a327bdab799daeb80fd3c987663308b14e2c6718abdf75afce21d29607e35f2705eb336a14aa935c0ca5949ce7
+  languageName: node
+  linkType: hard
+
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -2343,12 +2350,13 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    basic-loading: "npm:^0.0.23"
+    basic-loading: "npm:^1.0.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.4"
     next: "npm:14.0.4"
     react: "npm:^18"
     react-dom: "npm:^18"
+    recoil: "npm:^0.7.7"
     typescript: "npm:^5"
   languageName: unknown
   linkType: soft
@@ -2676,6 +2684,22 @@ __metadata:
   dependencies:
     loose-envify: "npm:^1.1.0"
   checksum: b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
+  languageName: node
+  linkType: hard
+
+"recoil@npm:^0.7.7":
+  version: 0.7.7
+  resolution: "recoil@npm:0.7.7"
+  dependencies:
+    hamt_plus: "npm:1.0.2"
+  peerDependencies:
+    react: ">=16.13.1"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 630a73b0bdfb1b453c68eca9b3fa0771d489006fbd856a7700174d775978ba3faa10d251ac2af7c07142014dcba07c2b103f448ecc19b6124d3228ec810f5c28
   languageName: node
   linkType: hard
 
