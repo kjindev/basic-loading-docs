@@ -6,7 +6,7 @@ import Sample from "@/pages/_component/pages/docs/Sample";
 import { roboto_bold } from "@/pages/_util/font";
 import { css } from "@emotion/react";
 import { useParams, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const DocsComponent = () => {
   const [name, setName] = useState("");
@@ -75,8 +75,8 @@ const DocsComponent = () => {
           <div className="docs-content-container">
             <div className={`${roboto_bold.className}`}>• Code</div>
             <div className="code-block">
-              {/* <CodeBlock title={name} /> */}
-              <CodeEditor />
+              <CodeBlock title={name} />
+              {/* <CodeEditor title={name} /> */}
             </div>
           </div>
           <div className="docs-content-container">

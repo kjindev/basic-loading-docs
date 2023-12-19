@@ -4,7 +4,7 @@ import Light from "../../_assets/light_mode.svg";
 import Dark from "../../_assets/dark_mode.svg";
 
 import { css } from "@emotion/react";
-import { roboto_bold } from "../../_util/font";
+import { roboto, roboto_bold } from "../../_util/font";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -69,7 +69,7 @@ export default function NavBar() {
         },
       })}
     >
-      <div className="container">
+      <div className={`${roboto.className} container`}>
         <div style={{ textDecoration: "none" }}>
           <Link href="/" className={`title ${roboto_bold.className}`}>
             BASIC LOADING
@@ -81,9 +81,9 @@ export default function NavBar() {
             <Link href="/docs" className="category">
               Docs
             </Link>
-            <Link href="/templates" className="category">
+            {/* <Link href="/templates" className="category">
               Templates
-            </Link>
+            </Link> */}
           </span>
         </div>
         <div onClick={toggleMode} className="mode-btn">

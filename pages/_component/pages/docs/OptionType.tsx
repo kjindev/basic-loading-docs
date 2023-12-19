@@ -1,3 +1,4 @@
+import { componentList } from "@/pages/_util/docs";
 import { css } from "@emotion/react";
 
 interface PropsType {
@@ -5,7 +6,9 @@ interface PropsType {
 }
 
 export default function OptionType({ title }: PropsType) {
-  //   const targetList: any = list.find((item: any) => item.title === title);
+  const targetList: any = componentList.find(
+    (item: any) => item.title === title
+  );
 
   return (
     <div
@@ -26,7 +29,7 @@ export default function OptionType({ title }: PropsType) {
         },
       })}
     >
-      {/* {targetList ? (
+      {targetList ? (
         targetList.optionType.map((item: any, index: any) => (
           <div key={index} className="option-container">
             <span>{item.name}</span>
@@ -39,7 +42,7 @@ export default function OptionType({ title }: PropsType) {
         ))
       ) : (
         <div></div>
-      )} */}
+      )}
     </div>
   );
 }

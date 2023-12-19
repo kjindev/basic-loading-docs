@@ -8,10 +8,9 @@ export default function SideMenu() {
   //   const pathname = usePathname();
 
   const list = [
-    "SpinnerBasic",
-    "SpinnerCircle",
-    "DotBounce",
-    "DotBasic",
+    "Spinner",
+    "BounceDot",
+    "BasicDot",
     "Skeleton",
     "ProgressBar",
     "Wave",
@@ -42,7 +41,7 @@ export default function SideMenu() {
           color: "black",
         },
         "& .sideMenu-content:hover": {
-          color: "blue",
+          color: "#7c3aed",
         },
       })}
     >
