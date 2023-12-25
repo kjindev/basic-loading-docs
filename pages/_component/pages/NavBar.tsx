@@ -6,7 +6,7 @@ import Dark from "../../_assets/dark_mode.svg";
 import { css } from "@emotion/react";
 import { fontSize, notosans, notosans_bold } from "../../_util/font";
 import { useState } from "react";
-import { shadow } from "@/pages/_util/constant";
+import { mainColor, shadow, subColor2 } from "@/pages/_util/constant";
 
 export default function NavBar() {
   const [mode, setMode] = useState("light");
@@ -67,6 +67,11 @@ export default function NavBar() {
         "& .mode-btn:hover": {
           cursor: "pointer",
         },
+        "& .icon": {
+          backgroundColor: subColor2,
+          padding: 14 / 1.5,
+          borderRadius: 28,
+        },
       })}
     >
       <div className={`${notosans.className} container`}>
@@ -88,9 +93,10 @@ export default function NavBar() {
         </div>
         <div onClick={toggleMode} className="mode-btn">
           {mode === "light" ? (
-            <Image src={Light} alt="mode" id="light" />
+            <Image src={Light} alt="mode" id="light" className="icon" />
           ) : (
-            <Image src={Dark} alt="mode" id="dark" />
+            // <Image src={Light} alt="mode" id="light" />
+            <Image src={Dark} alt="mode" id="dark" className="icon" />
           )}
         </div>
       </div>
