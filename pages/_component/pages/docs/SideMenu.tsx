@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { css } from "@emotion/react";
 import { roboto_bold } from "../../../_util/font";
+import { mainColor, shadow } from "@/pages/_util/constant";
 
 export default function SideMenu() {
   //   const { name } = useParams();
@@ -26,8 +27,7 @@ export default function SideMenu() {
         backgroundColor: "white",
         width: "240px",
         height: "100vh",
-        boxShadow:
-          " 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);",
+        boxShadow: shadow,
         "& .sideMenu-container": {
           padding: "1rem 1.5rem",
         },
@@ -41,7 +41,7 @@ export default function SideMenu() {
           color: "black",
         },
         "& .sideMenu-content:hover": {
-          color: "#7c3aed",
+          color: mainColor,
         },
       })}
     >

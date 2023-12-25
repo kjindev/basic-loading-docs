@@ -6,6 +6,7 @@ import Dark from "../../_assets/dark_mode.svg";
 import { css } from "@emotion/react";
 import { roboto, roboto_bold } from "../../_util/font";
 import { useState } from "react";
+import { shadow } from "@/pages/_util/constant";
 
 export default function NavBar() {
   const [mode, setMode] = useState("light");
@@ -40,8 +41,7 @@ export default function NavBar() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        boxShadow:
-          "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);",
+        boxShadow: shadow,
         "& .container": {
           width: "1200px",
           display: "flex",

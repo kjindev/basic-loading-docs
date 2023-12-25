@@ -1,4 +1,5 @@
 import { valueSate } from "@/pages/_state/state";
+import { mainColor, subColor1, subColor2 } from "@/pages/_util/constant";
 import {
   BasicDot,
   BounceDot,
@@ -9,7 +10,6 @@ import {
   Spinner,
   Wave,
 } from "basic-loading";
-import { useRecoilValue } from "recoil";
 
 interface PropsType {
   title: string;
@@ -18,38 +18,38 @@ interface PropsType {
 export default function Sample({ title }: PropsType) {
   const dot = {
     size: 12,
-    color: "#7c3aed",
+    color: mainColor,
   };
 
   const progressBar = {
     width: 300,
-    bgColor: "#ddd6fe",
-    barColor: "#7c3aed",
+    bgColor: subColor2,
+    barColor: mainColor,
   };
 
   const skeleton = {
     width: "100px",
     height: "100px",
     speed: 1.2,
-    color: ["#ddd6fe", "#c4b5fd"],
+    color: [subColor2, subColor1],
     borderRadius: "20px",
   };
 
   const spinner = {
     size: 50,
-    bgColor: "#7c3aed",
-    barColor: "#ddd6fe",
+    bgColor: mainColor,
+    barColor: subColor2,
     thickness: 7,
   };
 
   const pulse = {
     size: 100,
-    color: "#a78bfa",
+    color: subColor1,
   };
 
   const wave = {
     height: 30,
-    color: "#7c3aed",
+    color: mainColor,
   };
 
   if (title === "Skeleton") {
