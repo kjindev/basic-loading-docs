@@ -4,7 +4,7 @@ import Light from "../../_assets/light_mode.svg";
 import Dark from "../../_assets/dark_mode.svg";
 
 import { css } from "@emotion/react";
-import { roboto, roboto_bold } from "../../_util/font";
+import { fontSize, notosans, notosans_bold } from "../../_util/font";
 import { useState } from "react";
 import { shadow } from "@/pages/_util/constant";
 
@@ -49,11 +49,11 @@ export default function NavBar() {
           alignItems: "center",
         },
         "& .title": {
-          fontSize: "1.2rem",
+          fontSize: fontSize.medium,
           marginRight: "1.2rem",
         },
         "& .category": {
-          fontSize: "0.875rem",
+          fontSize: fontSize.small,
           padding: "0 1.2rem",
         },
         "& .mode-btn": {
@@ -69,9 +69,9 @@ export default function NavBar() {
         },
       })}
     >
-      <div className={`${roboto.className} container`}>
+      <div className={`${notosans.className} container`}>
         <div style={{ textDecoration: "none" }}>
-          <Link href="/" className={`title ${roboto_bold.className}`}>
+          <Link href="/" className={`title ${notosans_bold.className}`}>
             BASIC LOADING
           </Link>
           <span>

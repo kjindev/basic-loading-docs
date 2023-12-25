@@ -1,6 +1,6 @@
 import { valueSate } from "@/pages/_state/state";
 import { componentList } from "@/pages/_util/docs";
-import { roboto } from "@/pages/_util/font";
+import { notosans } from "@/pages/_util/font";
 import { css } from "@emotion/react";
 import { Editor } from "@monaco-editor/react";
 import { useEffect, useState } from "react";

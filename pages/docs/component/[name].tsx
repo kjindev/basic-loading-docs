@@ -4,7 +4,7 @@ import CodeEditor from "@/pages/_component/pages/docs/CodeEditor";
 import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
 import { shadow } from "@/pages/_util/constant";
-import { roboto_bold } from "@/pages/_util/font";
+import { fontSize, notosans_bold } from "@/pages/_util/font";
 import { css } from "@emotion/react";
 import { useParams, usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -29,10 +29,10 @@ const DocsComponent = () => {
             padding: "80px 0 0 280px",
           },
           "& .docs-category": {
-            fontSize: "0.875rem",
+            fontSize: fontSize.small,
           },
           "& .docs-title": {
-            fontSize: "2em",
+            fontSize: fontSize.large2,
           },
           "& .docs-content-container": {
             margin: "2rem 0",
@@ -43,7 +43,7 @@ const DocsComponent = () => {
           "& .option-type": {
             display: "flex",
             textAlign: "center",
-            fontSize: "0.875rem",
+            fontSize: fontSize.small,
             backgroundColor: "#00000010",
             margin: "0.75rem 0",
             padding: "0.75rem 0",
@@ -65,23 +65,23 @@ const DocsComponent = () => {
       >
         <div className="docs-container">
           <div className="docs-category">Component</div>
-          <div className={`docs-title ${roboto_bold.className}`}>{name}</div>
+          <div className={`docs-title ${notosans_bold.className}`}>{name}</div>
           <div className="docs-content-container">
-            <div className={`${roboto_bold.className}`}>• Sample</div>
+            <div className={`${notosans_bold.className}`}>• Sample</div>
             <div className="sample">
               <Sample title={name} />
             </div>
           </div>
           <div className="docs-content-container">
-            <div className={`${roboto_bold.className}`}>• Code</div>
+            <div className={`${notosans_bold.className}`}>• Code</div>
             <div className="code-block">
               <CodeBlock title={name} />
               {/* <CodeEditor title={name} /> */}
             </div>
           </div>
           <div className="docs-content-container">
-            <div className={`${roboto_bold.className}`}>• Option Type</div>
-            <div className={`option-type ${roboto_bold.className}`}>
+            <div className={`${notosans_bold.className}`}>• Option Type</div>
+            <div className={`option-type ${notosans_bold.className}`}>
               <span>name</span>
               <span>type</span>
               <span>default</span>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { css } from "@emotion/react";
-import { roboto_bold } from "../../../_util/font";
+import { fontSize, notosans_bold } from "../../../_util/font";
 import { mainColor, shadow } from "@/pages/_util/constant";
 
 export default function SideMenu() {
@@ -32,12 +32,13 @@ export default function SideMenu() {
           padding: "1rem 1.5rem",
         },
         "& .sideMenu-title": {
+          fontSize: fontSize.small,
           margin: "0.875rem 0 0.5rem 0",
         },
         "& .sideMenu-content": {
           padding: "0.5rem 0 0.5rem 0.75rem",
           textDecoration: "none",
-          fontSize: "0.875rem",
+          fontSize: fontSize.small,
           color: "black",
         },
         "& .sideMenu-content:hover": {
@@ -46,7 +47,7 @@ export default function SideMenu() {
       })}
     >
       <div className="sideMenu-container">
-        <div className={`sideMenu-title ${roboto_bold.className}`}>
+        <div className={`sideMenu-title ${notosans_bold.className}`}>
           Installation
         </div>
         <Link href="/docs">
@@ -61,7 +62,7 @@ export default function SideMenu() {
         </Link>
         <div
           style={{ textDecoration: "none" }}
-          className={`sideMenu-title ${roboto_bold.className}`}
+          className={`sideMenu-title ${notosans_bold.className}`}
         >
           Component
         </div>
