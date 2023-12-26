@@ -18,13 +18,11 @@
     "recoil": "^0.7.7"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
-    "jest": "^29.7.0",
     "typescript": "^5"
   },
   "packageManager": "yarn@4.0.2"
