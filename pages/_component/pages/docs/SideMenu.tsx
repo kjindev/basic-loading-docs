@@ -1,0 +1,84 @@
+import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
+import { css } from "@emotion/react";
+import { fontSize, notosans_bold } from "../../../_util/font";
+import { mainColor, shadow } from "@/pages/_util/constant";
+
+export default function SideMenu() {
+  //   const { name } = useParams();
+  //   const pathname = usePathname();
+
+  const list = [
+    "Spinner",
+    "BounceDot",
+    "BasicDot",
+    "Skeleton",
+    "ProgressBar",
+    "Wave",
+    "Pulse",
+    "Fade",
+  ];
+
+  return (
+    <div
+      css={css({
+        position: "fixed",
+        paddingTop: "3.5rem",
+        backgroundColor: "white",
+        width: "240px",
+        height: "100vh",
+        boxShadow: shadow,
+        "& .sideMenu-container": {
+          padding: "1rem 1.5rem",
+        },
+        "& .sideMenu-title": {
+          fontSize: fontSize.small,
+          margin: "0.875rem 0 0.5rem 0",
+        },
+        "& .sideMenu-content": {
+          padding: "0.5rem 0 0.5rem 0.75rem",
+          textDecoration: "none",
+          fontSize: fontSize.small,
+          color: "black",
+        },
+        "& .sideMenu-content:hover": {
+          color: mainColor,
+        },
+      })}
+    >
+      <div className="sideMenu-container">
+        <div className={`sideMenu-title ${notosans_bold.className}`}>
+          Installation
+        </div>
+        <Link href="/docs">
+          <div
+            className="sideMenu-content"
+            // className={`content ${
+            //   pathname === "/docs" ? "text-indigo-500" : "hover:text-indigo-500"
+            // }`}
+          >
+            Get Started
+          </div>
+        </Link>
+        <div
+          style={{ textDecoration: "none" }}
+          className={`sideMenu-title ${notosans_bold.className}`}
+        >
+          Component
+        </div>
+        {list.sort().map((item, i) => (
+          <Link key={i} href={`/docs/component/${item}`}>
+            <div
+              className="sideMenu-content"
+              // className={`content ${
+              //   item === name ? "text-indigo-500" : "hover:text-indigo-500"
+              // }`}
+            >
+              {item}
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}

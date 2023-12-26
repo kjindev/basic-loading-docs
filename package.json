@@ -1,5 +1,5 @@
 {
-  "name": "next-page-project",
+  "name": "basic-loading-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,9 +11,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@monaco-editor/react": "^4.6.0",
+    "basic-loading": "^1.0.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@types/node": "^20",
