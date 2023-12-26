@@ -1,4 +1,3 @@
-import { valueSate } from "@/pages/_state/state";
 import { shadow } from "@/util/constant";
 import { componentList } from "@/util/docs";
 import { notosans } from "@/util/font";

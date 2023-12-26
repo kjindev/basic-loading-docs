@@ -1,4 +1,3 @@
-import { valueSate } from "@/pages/_state/state";
 import { mainColor, subColor1, subColor2 } from "@/util/constant";
 import {
   BasicDot,
