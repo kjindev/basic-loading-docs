@@ -46,24 +46,17 @@ export default function NavBar() {
             <Link href="/introduction" className="category">
               Introduction
             </Link>
-            <Link href="/docs" className="category">
+            <Link href="/docs/installation" className="category">
               Docs
             </Link>
           </span>
         </div>
-        <div onClick={toggleMode} className="mode-btn">
-          {mode === "light" ? (
-            <Image src={Light} alt="mode" id="light" className="icon" />
+        <div onClick={toggleMobileMenu} className="mobileMenu">
+          {mobileMenu ? (
+            <Image src={Close} alt="close" id="close" />
           ) : (
-            <Image src={Dark} alt="mode" id="dark" className="icon" />
+            <Image src={Menu} alt="menu" id="menu" />
           )}
-          <div onClick={toggleMobileMenu} className="mobileMenu">
-            {mobileMenu ? (
-              <Image src={Close} alt="close" id="close" />
-            ) : (
-              <Image src={Menu} alt="menu" id="menu" />
-            )}
-          </div>
         </div>
       </div>
     </div>
@@ -71,7 +64,7 @@ export default function NavBar() {
 }
 
 const style = {
-  zIndex: "150",
+  zIndex: "250",
   width: "100%",
   height: "60px",
   backgroundColor: "white",
@@ -84,7 +77,10 @@ const style = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "0 2rem",
+    padding: "0 1.2rem",
+    [mq[0]]: {
+      padding: "0 2rem",
+    },
     [mq[2]]: {
       padding: "0 0",
     },
@@ -120,9 +116,9 @@ const style = {
     borderRadius: 28,
   },
   "& .mobileMenu": {
-    display: "inline-block",
+    display: "flex",
     cursor: "pointer",
-    padding: "0 14px",
+    // padding: "0 14px",
     [mq[1]]: {
       display: "none",
     },

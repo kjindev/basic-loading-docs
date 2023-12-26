@@ -1,8 +1,9 @@
 import { css } from "@emotion/react";
-import { fontSize, notosans_bold } from "../../util/font";
-import DocsLayout from "../_component/layout/DocsLayout";
+
+import DocsLayout from "../../_component/layout/DocsLayout";
 import { ReactNode } from "react";
 import { mq } from "@/util/constant";
+import { fontSize, notosans_bold } from "@/util/font";
 
 export default function Docs() {
   return (
@@ -44,7 +45,7 @@ const codeStyle = {
 };
 
 const docsStyle = {
-  padding: "100px 50px",
+  padding: "135px 30px",
   fontSize: fontSize.small,
   [mq[1]]: {
     padding: "0",

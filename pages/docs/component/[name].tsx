@@ -60,7 +60,7 @@ export default function DocsComponent() {
 }
 
 const style = {
-  padding: "90px 50px",
+  padding: "135px 30px",
   fontSize: fontSize.small,
   [mq[1]]: {
     padding: "0",
