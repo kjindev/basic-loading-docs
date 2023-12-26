@@ -13,27 +13,7 @@ export default function OptionType({ title }: PropsType) {
   );
 
   return (
-    <div
-      css={css({
-        fontSize: fontSize.extraSmall,
-        boxShadow: shadow,
-        padding: "0.25rem 0",
-        borderRadius: "0.75rem",
-        // borderRadius: "0.75rem",
-        "& .option-container": {
-          display: "flex",
-          width: "100%",
-          textAlign: "center",
-          margin: "1rem 0",
-
-          "& span": {
-            width: "25%",
-            margin: "0.25rem 0",
-            padding: "0.25rem 0",
-          },
-        },
-      })}
-    >
+    <div css={css(style, { textAlign: "center" })}>
       {targetList ? (
         targetList.optionType.map((item: any, index: any) => (
           <div key={index} className="option-container">
@@ -51,3 +31,20 @@ export default function OptionType({ title }: PropsType) {
     </div>
   );
 }
+
+const style = {
+  fontSize: fontSize.extraSmall,
+  boxShadow: shadow,
+  padding: "0.25rem 0",
+  borderRadius: "0.75rem",
+  "& .option-container": {
+    display: "flex",
+    width: "100%",
+    margin: "1rem 0",
+  },
+  "& span": {
+    width: "25%",
+    margin: "0.25rem 0",
+    padding: "0.25rem 0",
+  },
+};
