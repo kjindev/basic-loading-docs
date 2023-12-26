@@ -1,13 +1,9 @@
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
 import { css } from "@emotion/react";
 import { mainColor, shadow } from "@/util/constant";
 import { fontSize, notosans_bold } from "@/util/font";
 
 export default function SideMenu() {
-  //   const { name } = useParams();
-  //   const pathname = usePathname();
-
   const list = [
     "Spinner",
     "BounceDot",
@@ -20,45 +16,13 @@ export default function SideMenu() {
   ];
 
   return (
-    <div
-      css={css({
-        position: "fixed",
-        paddingTop: "3.5rem",
-        backgroundColor: "white",
-        width: "240px",
-        height: "100vh",
-        boxShadow: shadow,
-        "& .sideMenu-container": {
-          padding: "1rem 1.5rem",
-        },
-        "& .sideMenu-title": {
-          fontSize: fontSize.small,
-          margin: "0.875rem 0 0.5rem 0",
-        },
-        "& .sideMenu-content": {
-          padding: "0.5rem 0 0.5rem 0.75rem",
-          textDecoration: "none",
-          fontSize: fontSize.small,
-          color: "black",
-        },
-        "& .sideMenu-content:hover": {
-          color: mainColor,
-        },
-      })}
-    >
+    <div css={css(style, { position: "fixed" })}>
       <div className="sideMenu-container">
         <div className={`sideMenu-title ${notosans_bold.className}`}>
           Installation
         </div>
         <Link href="/docs">
-          <div
-            className="sideMenu-content"
-            // className={`content ${
-            //   pathname === "/docs" ? "text-indigo-500" : "hover:text-indigo-500"
-            // }`}
-          >
-            Get Started
-          </div>
+          <div className="sideMenu-content">Get Started</div>
         </Link>
         <div
           style={{ textDecoration: "none" }}
@@ -68,17 +32,34 @@ export default function SideMenu() {
         </div>
         {list.sort().map((item, i) => (
           <Link key={i} href={`/docs/component/${item}`}>
-            <div
-              className="sideMenu-content"
-              // className={`content ${
-              //   item === name ? "text-indigo-500" : "hover:text-indigo-500"
-              // }`}
-            >
-              {item}
-            </div>
+            <div className="sideMenu-content">{item}</div>
           </Link>
         ))}
       </div>
     </div>
   );
 }
+
+const style = {
+  paddingTop: "3.5rem",
+  backgroundColor: "white",
+  width: "240px",
+  height: "100vh",
+  boxShadow: shadow,
+  "& .sideMenu-container": {
+    padding: "1rem 1.5rem",
+  },
+  "& .sideMenu-title": {
+    fontSize: fontSize.small,
+    margin: "0.875rem 0 0.5rem 0",
+  },
+  "& .sideMenu-content": {
+    padding: "0.5rem 0 0.5rem 0.75rem",
+    textDecoration: "none",
+    fontSize: fontSize.small,
+    color: "black",
+  },
+  "& .sideMenu-content:hover": {
+    color: mainColor,
+  },
+};

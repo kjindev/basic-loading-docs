@@ -31,49 +31,7 @@ export default function NavBar() {
   // };
 
   return (
-    <div
-      css={css({
-        zIndex: "100",
-        position: "fixed",
-        width: "100%",
-        height: "60px",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        boxShadow: shadow,
-        "& .container": {
-          width: "1200px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        },
-        "& .title": {
-          fontSize: fontSize.medium,
-          marginRight: "1.2rem",
-        },
-        "& .category": {
-          fontSize: fontSize.small,
-          padding: "0 1.2rem",
-        },
-        "& .mode-btn": {
-          width: "25px",
-          height: "25px",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        },
-        "& .mode-btn:hover": {
-          cursor: "pointer",
-        },
-        "& .icon": {
-          backgroundColor: subColor2,
-          padding: 14 / 1.5,
-          borderRadius: 28,
-        },
-      })}
-    >
+    <div css={css(style, { position: "fixed" })}>
       <div className={`${notosans.className} container`}>
         <div style={{ textDecoration: "none" }}>
           <Link href="/" className={`title ${notosans_bold.className}`}>
@@ -86,16 +44,12 @@ export default function NavBar() {
             <Link href="/docs" className="category">
               Docs
             </Link>
-            {/* <Link href="/templates" className="category">
-              Templates
-            </Link> */}
           </span>
         </div>
         <div onClick={toggleMode} className="mode-btn">
           {mode === "light" ? (
             <Image src={Light} alt="mode" id="light" className="icon" />
           ) : (
-            // <Image src={Light} alt="mode" id="light" />
             <Image src={Dark} alt="mode" id="dark" className="icon" />
           )}
         </div>
@@ -103,3 +57,44 @@ export default function NavBar() {
     </div>
   );
 }
+
+const style = {
+  zIndex: "100",
+  width: "100%",
+  height: "60px",
+  backgroundColor: "white",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  boxShadow: shadow,
+  "& .container": {
+    width: "1000px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  "& .title": {
+    fontSize: fontSize.medium,
+    marginRight: "1.2rem",
+  },
+  "& .category": {
+    fontSize: fontSize.small,
+    padding: "0 1.2rem",
+  },
+  "& .mode-btn": {
+    width: "25px",
+    height: "25px",
+    borderRadius: "50%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  "& .mode-btn:hover": {
+    cursor: "pointer",
+  },
+  "& .icon": {
+    backgroundColor: subColor2,
+    padding: 14 / 1.5,
+    borderRadius: 28,
+  },
+};
