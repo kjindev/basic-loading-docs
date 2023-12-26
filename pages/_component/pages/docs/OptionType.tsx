@@ -1,4 +1,6 @@
+import { shadow } from "@/pages/_util/constant";
 import { componentList } from "@/pages/_util/docs";
+import { fontSize } from "@/pages/_util/font";
 import { css } from "@emotion/react";
 
 interface PropsType {
@@ -13,14 +15,17 @@ export default function OptionType({ title }: PropsType) {
   return (
     <div
       css={css({
-        fontSize: "0.75rem",
-        padding: "0 0 0 0",
+        fontSize: fontSize.extraSmall,
+        boxShadow: shadow,
+        padding: "0.25rem 0",
+        borderRadius: "0.75rem",
         // borderRadius: "0.75rem",
         "& .option-container": {
           display: "flex",
           width: "100%",
           textAlign: "center",
           margin: "1rem 0",
+
           "& span": {
             width: "25%",
             margin: "0.25rem 0",

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { roboto_bold } from "../_util/font";
+import { fontSize, notosans_bold } from "../_util/font";
 import DocsLayout from "../_component/layout/DocsLayout";
 import { ReactNode } from "react";
 
@@ -13,7 +13,7 @@ function Code({ children }: { children: ReactNode }) {
         padding: "0.05rem",
         paddingLeft: "1rem",
         borderRadius: "16px",
-        fontSize: "0.875rem",
+        fontSize: fontSize.small,
         margin: "1rem 0rem",
       })}
     >
@@ -32,16 +32,16 @@ const Docs = () => {
             padding: "100px 0 0 280px",
           },
           "& .doc-category": {
-            fontSize: "0.875rem",
+            fontSize: fontSize.small,
           },
           "& .doc-title": {
-            fontSize: "2em",
+            fontSize: fontSize.large2,
           },
         })}
       >
         <div className="doc-container">
           <div className="doc-category">Installation</div>
-          <div className={`doc-title ${roboto_bold.className}`}>
+          <div className={`doc-title ${notosans_bold.className}`}>
             Get Started
           </div>
           <Code>npm install basic-loading</Code>

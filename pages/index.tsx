@@ -1,6 +1,6 @@
 // /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { roboto_bold } from "./_util/font";
+import { fontSize, notosans_bold } from "./_util/font";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
     >
       <Intro1 />
       <Intro2 />
-      <footer className={roboto_bold.className}>BASIC LOADING</footer>
+      <footer className={notosans_bold.className}>BASIC LOADING</footer>
     </div>
   );
 }
@@ -40,15 +40,15 @@ function Intro1() {
         margin: "12px 0",
         "& .title": {
           lineHeight: "4.2rem",
-          fontSize: "4.5rem",
+          fontSize: fontSize.large3,
         },
         "& .subTitle": {
-          fontSize: "1.2rem",
+          fontSize: fontSize.medium,
           padding: "24px 0",
         },
       })}
     >
-      <div className={`title ${roboto_bold.className}`}>
+      <div className={`title ${notosans_bold.className}`}>
         Basic & Simple
         <br />
         Loading Component
@@ -69,7 +69,7 @@ function Intro2() {
         height: "100vh",
         "& .title": {
           lineHeight: "4rem",
-          fontSize: "3.5rem",
+          fontSize: fontSize.large3,
         },
         "& .subTitle": {
           fontSize: "1.2rem",
@@ -77,7 +77,7 @@ function Intro2() {
         },
       })}
     >
-      <div className={`title ${roboto_bold.className}`}>
+      <div className={`title ${notosans_bold.className}`}>
         Custom as you want,
         <br />
         Combine as you need.
