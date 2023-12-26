@@ -38,20 +38,30 @@ export default function NavBar() {
   return (
     <div css={css(style, { position: "fixed" })}>
       <div className={`${notosans.className} container`}>
-        <div style={{ textDecoration: "none" }}>
-          <Link href="/" className={`title ${notosans_bold.className}`}>
-            BASIC LOADING
-          </Link>
-          <span className="link-list">
+        <div className="text-container">
+          <div>
+            <Link href="/" className={`title ${notosans_bold.className}`}>
+              BASIC LOADING
+            </Link>
+          </div>
+          {/* <div className="link-list">
             <Link href="/introduction" className="category">
               Introduction
             </Link>
             <Link href="/docs/installation" className="category">
               Docs
             </Link>
-          </span>
+          </div> */}
         </div>
-        <div onClick={toggleMobileMenu} className="mobileMenu">
+        <div className="link-list">
+          <Link href="/introduction" className="category">
+            Introduction
+          </Link>
+          <Link href="/docs/installation" className="category">
+            Docs
+          </Link>
+        </div>
+        <div onClick={toggleMobileMenu} className="mobile-menu">
           {mobileMenu ? (
             <Image src={Close} alt="close" id="close" />
           ) : (
@@ -115,7 +125,7 @@ const style = {
     padding: 14 / 1.5,
     borderRadius: 28,
   },
-  "& .mobileMenu": {
+  "& .mobile-menu": {
     display: "flex",
     cursor: "pointer",
     // padding: "0 14px",
