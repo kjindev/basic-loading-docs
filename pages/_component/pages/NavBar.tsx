@@ -4,9 +4,9 @@ import Light from "../../_assets/light_mode.svg";
 import Dark from "../../_assets/dark_mode.svg";
 
 import { css } from "@emotion/react";
-import { fontSize, notosans, notosans_bold } from "../../_util/font";
+import { fontSize, notosans, notosans_bold } from "../../../util/font";
 import { useState } from "react";
-import { mainColor, shadow, subColor2 } from "@/pages/_util/constant";
+import { mainColor, shadow, subColor2 } from "@/util/constant";
 
 export default function NavBar() {
   const [mode, setMode] = useState("light");

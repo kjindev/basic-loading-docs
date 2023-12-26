@@ -1,6 +1,6 @@
 // /** @jsxImportSource @emotion/react */
+import { fontSize, notosans_bold } from "@/util/font";
 import { css } from "@emotion/react";
-import { fontSize, notosans_bold } from "./_util/font";
 
 export default function Home() {
   return (
