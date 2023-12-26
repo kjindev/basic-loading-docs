@@ -18,6 +18,6 @@ const style = {
   justifyContent: "center",
   alignItems: "center",
   "& .container": {
-    width: "1200px",
+    width: "1000px",
   },
 };

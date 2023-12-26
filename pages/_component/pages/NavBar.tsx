@@ -68,7 +68,7 @@ const style = {
   alignItems: "center",
   boxShadow: shadow,
   "& .container": {
-    width: "1200px",
+    width: "1000px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
