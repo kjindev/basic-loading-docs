@@ -1,6 +1,6 @@
-import { shadow } from "@/pages/_util/constant";
-import { componentList } from "@/pages/_util/docs";
-import { fontSize } from "@/pages/_util/font";
+import { shadow } from "@/util/constant";
+import { componentList } from "@/util/docs";
+import { fontSize } from "@/util/font";
 import { css } from "@emotion/react";
 
 interface PropsType {

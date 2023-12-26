@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { css } from "@emotion/react";
-import { fontSize, notosans_bold } from "../../../_util/font";
-import { mainColor, shadow } from "@/pages/_util/constant";
+import { mainColor, shadow } from "@/util/constant";
+import { fontSize, notosans_bold } from "@/util/font";
 
 export default function SideMenu() {
   //   const { name } = useParams();

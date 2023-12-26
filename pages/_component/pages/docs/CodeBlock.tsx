@@ -1,7 +1,7 @@
 import { valueSate } from "@/pages/_state/state";
-import { shadow } from "@/pages/_util/constant";
-import { componentList } from "@/pages/_util/docs";
-import { notosans } from "@/pages/_util/font";
+import { shadow } from "@/util/constant";
+import { componentList } from "@/util/docs";
+import { notosans } from "@/util/font";
 import { css } from "@emotion/react";
 import { Editor } from "@monaco-editor/react";
 import { useEffect, useState } from "react";
