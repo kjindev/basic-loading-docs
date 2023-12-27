@@ -21,7 +21,7 @@ export default function SideMenu() {
         <div className={`sideMenu-title ${notosans_bold.className}`}>
           Installation
         </div>
-        <Link href="/docs">
+        <Link href="/docs/installation">
           <div className="sideMenu-content">Get Started</div>
         </Link>
         <div

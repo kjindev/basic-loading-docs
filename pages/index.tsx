@@ -1,18 +1,18 @@
 // /** @jsxImportSource @emotion/react */
+import { mq } from "@/util/constant";
 import { fontSize, notosans_bold } from "@/util/font";
 import { css } from "@emotion/react";
 
 export default function Home() {
   return (
     <div css={css(pageStyle, { flexDirection: "column" })}>
-      <Intro1 />
-      {/* <Intro2 /> */}
+      <Intro />
       {/* <footer className={notosans_bold.className}>BASIC LOADING</footer> */}
     </div>
   );
 }
 
-function Intro1() {
+function Intro() {
   return (
     <div
       css={css(introStyle, { flexDirection: "column", textAlign: "center" })}
@@ -30,7 +30,7 @@ function Intro1() {
 const pageStyle = {
   width: "100%",
   display: "flex",
-  // flexDirection: "column",
+  height: "100vh",
   justifyContent: "center",
   alignItems: "center",
   "& footer": {
@@ -44,46 +44,31 @@ const pageStyle = {
 
 const introStyle = {
   display: "flex",
-  // flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
-  // textAlign: "center",
+
   margin: "12px 0",
   "& .title": {
-    lineHeight: "4.2rem",
-    fontSize: fontSize.large3,
+    fontSize: fontSize.large,
+    [mq[0]]: {
+      lineHeight: "3rem",
+      fontSize: fontSize.large2,
+    },
+    [mq[2]]: {
+      lineHeight: "4rem",
+      fontSize: fontSize.large3,
+    },
   },
   "& .subTitle": {
-    fontSize: fontSize.medium,
-    padding: "24px 0",
+    fontSize: fontSize.extraSmall,
+    padding: "0.5rem",
+    [mq[0]]: {
+      lineHeight: "3rem",
+      fontSize: fontSize.small,
+    },
+    [mq[2]]: {
+      lineHeight: "4rem",
+      fontSize: fontSize.medium,
+    },
   },
 };
-
-// function Intro2() {
-//   return (
-//     <div
-//       css={css({
-//         display: "flex",
-//         flexDirection: "column",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         height: "100vh",
-//         "& .title": {
-//           lineHeight: "4rem",
-//           fontSize: fontSize.large3,
-//         },
-//         "& .subTitle": {
-//           fontSize: "1.2rem",
-//           padding: "36px 0",
-//         },
-//       })}
-//     >
-//       <div className={`title ${notosans_bold.className}`}>
-//         Custom as you want,
-//         <br />
-//         Combine as you need.
-//       </div>
-//     </div>
-//   );
-// }

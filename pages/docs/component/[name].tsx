@@ -2,7 +2,7 @@ import DocsLayout from "@/pages/_component/layout/DocsLayout";
 import CodeBlock from "@/pages/_component/pages/docs/CodeBlock";
 import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
-import { shadow, subColor2 } from "@/util/constant";
+import { mq, shadow, subColor2 } from "@/util/constant";
 import { fontSize, notosans_bold } from "@/util/font";
 import { css } from "@emotion/react";
 import { useParams, usePathname } from "next/navigation";
@@ -21,7 +21,6 @@ export default function DocsComponent() {
 
   return (
     <DocsLayout>
-      return (
       <div
         css={css(style, {
           "& .option-type": {
@@ -56,20 +55,34 @@ export default function DocsComponent() {
           </div>
         </div>
       </div>
-      );
     </DocsLayout>
   );
 }
 
 const style = {
+  padding: "135px 30px",
+  fontSize: fontSize.small,
+  [mq[1]]: {
+    padding: "0",
+    fontSize: fontSize.medium,
+  },
   "& .docs-container": {
-    padding: "80px 0 0 280px",
+    padding: "0 0 0 0",
+    [mq[1]]: {
+      padding: "100px 30px 0 280px",
+    },
   },
   "& .docs-category": {
-    fontSize: fontSize.small,
+    fontSize: fontSize.extraSmall,
+    [mq[1]]: {
+      fontSize: fontSize.small,
+    },
   },
   "& .docs-title": {
-    fontSize: fontSize.large2,
+    fontSize: fontSize.large,
+    [mq[1]]: {
+      fontSize: fontSize.large2,
+    },
   },
   "& .docs-content-container": {
     margin: "2rem 0",
