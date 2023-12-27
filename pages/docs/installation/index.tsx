@@ -1,8 +1,9 @@
 import { css } from "@emotion/react";
-import { fontSize, notosans_bold } from "../../util/font";
-import DocsLayout from "../_component/layout/DocsLayout";
+
+import DocsLayout from "../../_component/layout/DocsLayout";
 import { ReactNode } from "react";
 import { mq } from "@/util/constant";
+import { fontSize, notosans_bold } from "@/util/font";
 
 export default function Docs() {
   return (
@@ -44,16 +45,37 @@ const codeStyle = {
 };
 
 const docsStyle = {
+  padding: "135px 30px",
+  fontSize: fontSize.small,
+  [mq[1]]: {
+    padding: "0",
+    fontSize: fontSize.medium,
+  },
   "& .doc-container": {
-    padding: "100px 0 0 280px",
-  },
-  "&.doc-category": {
-    fontsize: fontSize.small,
-  },
-  "& .doc-title": {
-    fontsize: fontSize.large2,
-    [mq[0]]: {
-      fontsize: fontSize.large,
+    padding: "0 0 0 0",
+    [mq[1]]: {
+      padding: "100px 30px 0 280px",
     },
   },
+  "& .doc-category": {
+    fontSize: fontSize.extraSmall,
+    [mq[1]]: {
+      fontSize: fontSize.small,
+    },
+  },
+  "& .doc-title": {
+    fontSize: fontSize.large,
+    [mq[1]]: {
+      fontSize: fontSize.large2,
+    },
+  },
+  // "&.doc-category": {
+  //   fontsize: fontSize.small,
+  // },
+  // "& .doc-title": {
+  //   fontsize: fontSize.large2,
+  //   [mq[0]]: {
+  //     fontsize: fontSize.large,
+  //   },
+  // },
 };

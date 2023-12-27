@@ -27,8 +27,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@emotion/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.1"],\
-          ["@emotion/styled", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.0"],\
-          ["@monaco-editor/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:4.6.0"],\
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
@@ -169,16 +167,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@emotion/is-prop-valid", [\
-      ["npm:1.2.1", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@emotion-is-prop-valid-npm-1.2.1-794afe6a94-10c0.zip/node_modules/@emotion/is-prop-valid/",\
-        "packageDependencies": [\
-          ["@emotion/is-prop-valid", "npm:1.2.1"],\
-          ["@emotion/memoize", "npm:0.8.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@emotion/memoize", [\
       ["npm:0.8.1", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@emotion-memoize-npm-0.8.1-9b1e35ff15-10c0.zip/node_modules/@emotion/memoize/",\
@@ -237,38 +225,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@emotion-sheet-npm-1.2.2-a918ac483c-10c0.zip/node_modules/@emotion/sheet/",\
         "packageDependencies": [\
           ["@emotion/sheet", "npm:1.2.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@emotion/styled", [\
-      ["npm:11.11.0", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@emotion-styled-npm-11.11.0-9a95c8527d-10c0.zip/node_modules/@emotion/styled/",\
-        "packageDependencies": [\
-          ["@emotion/styled", "npm:11.11.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.0", {\
-        "packageLocation": "./.yarn/__virtual__/@emotion-styled-virtual-9deda3ecb4/5/AppData/Local/Yarn/Berry/cache/@emotion-styled-npm-11.11.0-9a95c8527d-10c0.zip/node_modules/@emotion/styled/",\
-        "packageDependencies": [\
-          ["@emotion/styled", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.0"],\
-          ["@babel/runtime", "npm:7.23.5"],\
-          ["@emotion/babel-plugin", "npm:11.11.0"],\
-          ["@emotion/is-prop-valid", "npm:1.2.1"],\
-          ["@emotion/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.1"],\
-          ["@emotion/serialize", "npm:1.1.2"],\
-          ["@emotion/use-insertion-effect-with-fallbacks", "virtual:4e71775c3851b9ff036c139981cf34e5c161d9c62cca9092c7f5cd52f70ae668a3af5d78447110692648cec42da798b267e717b577d7ac71643ee853a86edec4#npm:1.0.1"],\
-          ["@emotion/utils", "npm:1.2.1"],\
-          ["@types/emotion__react", null],\
-          ["@types/react", "npm:18.2.43"],\
-          ["react", "npm:18.2.0"]\
-        ],\
-        "packagePeers": [\
-          "@emotion/react",\
-          "@types/emotion__react",\
-          "@types/react",\
-          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -407,60 +363,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@humanwhocodes-object-schema-npm-2.0.1-c23364bbfc-10c0.zip/node_modules/@humanwhocodes/object-schema/",\
         "packageDependencies": [\
           ["@humanwhocodes/object-schema", "npm:2.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@monaco-editor/loader", [\
-      ["npm:1.4.0", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@monaco-editor-loader-npm-1.4.0-4aa209f578-10c0.zip/node_modules/@monaco-editor/loader/",\
-        "packageDependencies": [\
-          ["@monaco-editor/loader", "npm:1.4.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:db2450b44f2f1316ab077e79cafec1c7006b4829df246fe2bf899bef1b737d49b84bbf5525ea19756e19acdd0c19bff25c04463a7027a69052d40bf4517ba9fe#npm:1.4.0", {\
-        "packageLocation": "./.yarn/__virtual__/@monaco-editor-loader-virtual-83eb28d22e/5/AppData/Local/Yarn/Berry/cache/@monaco-editor-loader-npm-1.4.0-4aa209f578-10c0.zip/node_modules/@monaco-editor/loader/",\
-        "packageDependencies": [\
-          ["@monaco-editor/loader", "virtual:db2450b44f2f1316ab077e79cafec1c7006b4829df246fe2bf899bef1b737d49b84bbf5525ea19756e19acdd0c19bff25c04463a7027a69052d40bf4517ba9fe#npm:1.4.0"],\
-          ["@types/monaco-editor", null],\
-          ["monaco-editor", null],\
-          ["state-local", "npm:1.0.7"]\
-        ],\
-        "packagePeers": [\
-          "@types/monaco-editor",\
-          "monaco-editor"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@monaco-editor/react", [\
-      ["npm:4.6.0", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@monaco-editor-react-npm-4.6.0-aabad3ef41-10c0.zip/node_modules/@monaco-editor/react/",\
-        "packageDependencies": [\
-          ["@monaco-editor/react", "npm:4.6.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:4.6.0", {\
-        "packageLocation": "./.yarn/__virtual__/@monaco-editor-react-virtual-db2450b44f/5/AppData/Local/Yarn/Berry/cache/@monaco-editor-react-npm-4.6.0-aabad3ef41-10c0.zip/node_modules/@monaco-editor/react/",\
-        "packageDependencies": [\
-          ["@monaco-editor/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:4.6.0"],\
-          ["@monaco-editor/loader", "virtual:db2450b44f2f1316ab077e79cafec1c7006b4829df246fe2bf899bef1b737d49b84bbf5525ea19756e19acdd0c19bff25c04463a7027a69052d40bf4517ba9fe#npm:1.4.0"],\
-          ["@types/monaco-editor", null],\
-          ["@types/react", "npm:18.2.43"],\
-          ["@types/react-dom", "npm:18.2.17"],\
-          ["monaco-editor", null],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:18.2.0"]\
-        ],\
-        "packagePeers": [\
-          "@types/monaco-editor",\
-          "@types/react-dom",\
-          "@types/react",\
-          "monaco-editor",\
-          "react-dom",\
-          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1091,8 +993,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["basic-loading-docs", "workspace:."],\
           ["@emotion/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.1"],\
-          ["@emotion/styled", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:11.11.0"],\
-          ["@monaco-editor/react", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:4.6.0"],\
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
@@ -3619,15 +3519,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/source-map-js-npm-1.0.2-ee4f9f9b30-10c0.zip/node_modules/source-map-js/",\
         "packageDependencies": [\
           ["source-map-js", "npm:1.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["state-local", [\
-      ["npm:1.0.7", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/state-local-npm-1.0.7-9005e49ea6-10c0.zip/node_modules/state-local/",\
-        "packageDependencies": [\
-          ["state-local", "npm:1.0.7"]\
         ],\
         "linkType": "HARD"\
       }]\
