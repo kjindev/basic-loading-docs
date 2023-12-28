@@ -1,6 +1,7 @@
 // /** @jsxImportSource @emotion/react */
 import { mq } from "@/util/constant";
 import { fontSize, notosans_bold } from "@/util/font";
+import { StringObject } from "@/util/type";
 import { css } from "@emotion/react";
 
 export default function Home() {
@@ -26,6 +27,8 @@ function Intro() {
     </div>
   );
 }
+
+const Description = (props: StringObject) => <p {...props} />;
 
 const pageStyle = {
   width: "100%",
