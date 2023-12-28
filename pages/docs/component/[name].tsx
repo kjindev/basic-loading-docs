@@ -2,6 +2,7 @@ import DocsLayout from "@/pages/_component/layout/DocsLayout";
 import CodeBlock from "@/pages/_component/pages/docs/CodeBlock";
 import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
+import { Box } from "@/util/common";
 import { mq, shadow, subColor2 } from "@/util/constant";
 import { fontSize, notosans_bold } from "@/util/font";
 import { css } from "@emotion/react";
@@ -33,9 +34,17 @@ export default function DocsComponent() {
           <div className={`docs-title ${notosans_bold.className}`}>{name}</div>
           <div className="docs-content-container">
             <div className={`${notosans_bold.className}`}>• Sample</div>
-            <div className="sample">
+            <Box
+              props={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "250px",
+                margin: "0.75rem 0",
+              }}
+            >
               <Sample title={name} />
-            </div>
+            </Box>
           </div>
           <div className="docs-content-container">
             <div className={`${notosans_bold.className}`}>• Code</div>

@@ -1,5 +1,4 @@
-import { shadow } from "@/util/constant";
-import { componentList } from "@/util/docs";
+import { componentList, shadow } from "@/util/constant";
 import { fontSize } from "@/util/font";
 import { css } from "@emotion/react";
 

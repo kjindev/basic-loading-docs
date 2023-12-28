@@ -1,5 +1,5 @@
-import { shadow } from "@/util/constant";
-import { componentList } from "@/util/docs";
+import { Box } from "@/util/common";
+import { componentList, shadow } from "@/util/constant";
 import { css } from "@emotion/react";
 
 export default function CodeBlock({ title }: { title: string }) {
@@ -80,12 +80,12 @@ export default function CodeBlock({ title }: { title: string }) {
 
 const style = {
   boxShadow: shadow,
+  borderRadius: "0.75rem",
   cursor: "default",
   backgroundColor: "#232323",
   letterSpacing: "0.05rem",
   color: "#f4f4f5",
   fontSize: "0.875rem",
-  borderRadius: "0.75rem",
   padding: "0.875rem 1.75rem",
   "& .cyan": { color: "#67e8f9" },
   "& .green": { color: "#bef264" },
