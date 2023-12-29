@@ -4,7 +4,7 @@ import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
 import { Box } from "@/util/common";
 import { mq, shadow, subColor2 } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { fontSize, robotoBold } from "@/util/font";
 import { css } from "@emotion/react";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -31,9 +31,9 @@ export default function DocsComponent() {
       >
         <div className="docs-container">
           <div className="docs-category">Component</div>
-          <div className={`docs-title ${notosans_bold.className}`}>{name}</div>
+          <div className={`docs-title ${robotoBold.className}`}>{name}</div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Sample</div>
+            <div className={`${robotoBold.className}`}>• Sample</div>
             <Box
               props={{
                 display: "flex",
@@ -47,14 +47,14 @@ export default function DocsComponent() {
             </Box>
           </div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Code</div>
+            <div className={`${robotoBold.className}`}>• Code</div>
             <div className="code-block">
               <CodeBlock title={name} />
             </div>
           </div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Option Type</div>
-            <div className={`option-type ${notosans_bold.className}`}>
+            <div className={`${robotoBold.className}`}>• Option Type</div>
+            <div className={`option-type ${robotoBold.className}`}>
               <span>name</span>
               <span>type</span>
               <span>default</span>

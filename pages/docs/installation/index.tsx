@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import DocsLayout from "../../_component/layout/DocsLayout";
 import { ReactNode } from "react";
 import { mq } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { fontSize, robotoBold } from "@/util/font";
 
 export default function Docs() {
   return (
@@ -11,9 +11,7 @@ export default function Docs() {
       <div css={docsStyle}>
         <div className="doc-container">
           <div className="doc-category">Installation</div>
-          <div className={`doc-title ${notosans_bold.className}`}>
-            Get Started
-          </div>
+          <div className={`doc-title ${robotoBold.className}`}>Get Started</div>
           <Code>npm install basic-loading</Code>
           <span>Or</span>
           <Code>yarn add basic-loading</Code>

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=notosans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=roboto:wght@300;400;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "notosans", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 a {
@@ -16,7 +16,7 @@ a {
 pre,
 code,
 input {
-  font-family: "notosans", sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
 }

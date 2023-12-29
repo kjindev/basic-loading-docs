@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { css } from "@emotion/react";
 import { mainColor, shadow } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { fontSize, robotoBold } from "@/util/font";
 
 export default function SideMenu() {
   const list = [
@@ -18,7 +18,7 @@ export default function SideMenu() {
   return (
     <div css={css(style, { position: "fixed" })}>
       <div className="sideMenu-container">
-        <div className={`sideMenu-title ${notosans_bold.className}`}>
+        <div className={`sideMenu-title ${robotoBold.className}`}>
           Installation
         </div>
         <Link href="/docs/installation">
@@ -26,7 +26,7 @@ export default function SideMenu() {
         </Link>
         <div
           style={{ textDecoration: "none" }}
-          className={`sideMenu-title ${notosans_bold.className}`}
+          className={`sideMenu-title ${robotoBold.className}`}
         >
           Component
         </div>

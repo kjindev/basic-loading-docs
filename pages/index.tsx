@@ -1,6 +1,6 @@
 // /** @jsxImportSource @emotion/react */
-import { mq } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { maxWidth, mq, subColor1, subColor2 } from "@/util/constant";
+import { fontSize, robotoBold } from "@/util/font";
 import { StringObject } from "@/util/type";
 import { css } from "@emotion/react";
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div css={css(pageStyle, { flexDirection: "column" })}>
       <Intro />
-      {/* <footer className={notosans_bold.className}>BASIC LOADING</footer> */}
+      {/* <footer className={robotoBold.className}>BASIC LOADING</footer> */}
     </div>
   );
 }
@@ -18,17 +18,17 @@ function Intro() {
     <div
       css={css(introStyle, { flexDirection: "column", textAlign: "center" })}
     >
-      <div className={`title ${notosans_bold.className}`}>
-        Basic & Simple
-        <br />
-        Loading Component
+      <div className={`title ${robotoBold.className}`}>
+        Basic Loading Components for React
       </div>
-      <div className="subTitle">React Loading UI Component Library</div>
+      <div className="subTitle">
+        BASIC LOADING is a library that provide loading UI components for React
+        and Next.js. <br /> You can customize the option values to use it the
+        way you want. Make effective loading page with BASIC LOADING!
+      </div>
     </div>
   );
 }
-
-const Description = (props: StringObject) => <p {...props} />;
 
 const pageStyle = {
   width: "100%",
@@ -46,13 +46,18 @@ const pageStyle = {
 };
 
 const introStyle = {
+  width: maxWidth,
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-
   margin: "12px 0",
+  backgroundImage: "linear-gradient(180deg,#555,#000)",
+  color: "transparent",
+  backgroundClip: "text",
   "& .title": {
     fontSize: fontSize.large,
+    padding: "1rem",
+    letterSpacing: "-0.025em",
     [mq[0]]: {
       lineHeight: "3rem",
       fontSize: fontSize.large2,
@@ -63,14 +68,14 @@ const introStyle = {
     },
   },
   "& .subTitle": {
-    fontSize: fontSize.extraSmall,
-    padding: "0.5rem",
+    fontSize: fontSize.small,
+    padding: "1rem",
+    lineHeight: "2rem",
+    color: "#71717a",
     [mq[0]]: {
-      lineHeight: "3rem",
       fontSize: fontSize.small,
     },
     [mq[2]]: {
-      lineHeight: "4rem",
       fontSize: fontSize.medium,
     },
   },

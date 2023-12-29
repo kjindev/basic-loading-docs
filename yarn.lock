@@ -449,13 +449,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:^18.2.38":
-  version: 18.2.45
-  resolution: "@types/react@npm:18.2.45"
+  version: 18.2.46
+  resolution: "@types/react@npm:18.2.46"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 4cc650c47ffb88baac29fb7a74e842e4af4a55f437086ef70250fdc75f0a5f2fcf8adc272d05ab2e00b1de6e14613296881271caee037dadf9130fdeb498c59e
+  checksum: 814cc67107e5e69501d65bfc371cc2c716665d2a3608d395a2f81e24c3a2875db28e2cad717dfb17017eabcffd1d68ee2c9e09ecaba3f7108d5b7fbb9888ebab
   languageName: node
   linkType: hard
 
@@ -767,7 +767,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    basic-loading: "npm:^1.0.1"
+    basic-loading: "npm:^1.0.13"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.4"
     next: "npm:14.0.4"
@@ -778,9 +778,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"basic-loading@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "basic-loading@npm:1.0.1"
+"basic-loading@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "basic-loading@npm:1.0.13"
   dependencies:
     "@types/node": "npm:^16.18.65"
     "@types/react": "npm:^18.2.38"
@@ -788,7 +788,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^4.9.5"
-  checksum: 8735666595f81ea68200ab28aaf9ebaf0bbee019d20291e3cbb55182a41b947e7837510e6621172404e8836293cec491b939d75a9d5fd6ed9bfd345329159d57
+  checksum: bfa9653e0333c7f54cdda2c6df2776c5e6e20efbd2bfd6778dc197f203613965d214816419686eeb11b5de6b75effd78bc9788786f13eda1044f2c624307d7de
   languageName: node
   linkType: hard
 

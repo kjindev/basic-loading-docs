@@ -1,8 +1,8 @@
 import { ReactNode, useEffect, useState } from "react";
 import SideMenu from "../pages/docs/SideMenu";
 import { css } from "@emotion/react";
-import { gray, gray2, mq } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { gray, gray2, maxWidth, mq } from "@/util/constant";
+import { fontSize, robotoBold } from "@/util/font";
 import { useParams, usePathname } from "next/navigation";
 import Image from "next/image";
 import Expand from "../../_assets/expand_more.svg";
@@ -64,7 +64,7 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
         </div>
         {isListVisible && (
           <div className="mobileMenuList">
-            <div className={`menu-title ${notosans_bold.className}`}>
+            <div className={`menu-title ${robotoBold.className}`}>
               Installation
             </div>
             <Link href="/docs/installation">
@@ -72,7 +72,7 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
             </Link>
             <div
               style={{ textDecoration: "none" }}
-              className={`menu-title ${notosans_bold.className}`}
+              className={`menu-title ${robotoBold.className}`}
             >
               Component
             </div>
@@ -133,7 +133,7 @@ const style = {
     color: "black",
   },
   "& .container": {
-    width: "1000px",
+    width: maxWidth,
   },
   "& .side-menu": {
     display: "none",
