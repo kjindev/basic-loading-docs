@@ -10,7 +10,7 @@ export const codeBlockBg = "#232323";
 export const maxWidth = "1200px";
 export const version = "2.0.1";
 
-const breakpoints = [500, 900, 1200];
+const breakpoints = [700, 900, 1200];
 export const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
 
 export const componentList: any = [
@@ -155,7 +155,7 @@ export const componentList: any = [
         unit: "none",
       },
       {
-        name: "backgroundColor",
+        name: "bgColor",
         type: "string",
         default: "#e0e0e0",
         unit: "none",

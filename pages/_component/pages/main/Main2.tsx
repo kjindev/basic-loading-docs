@@ -1,5 +1,5 @@
 import { Box } from "@/util/common";
-import { mainColor } from "@/util/constant";
+import { mainColor, mq } from "@/util/constant";
 import { fontSize, robotoBold } from "@/util/font";
 import { css } from "@emotion/react";
 
@@ -10,6 +10,12 @@ export default function Main2() {
         flexDirection: "column",
         "& .box": {
           flexDirection: "column",
+        },
+        "& .script": {
+          textAlign: "center",
+        },
+        "& .box-list": {
+          flexWrap: "wrap",
         },
       })}
     >
@@ -80,20 +86,23 @@ const scriptBox = {
   backgroundColor: "white",
   width: "300px",
   // height: "200px",
-  margin: "0px 25px",
+  margin: "25px",
   padding: "25px 15px",
 };
 
 const mainStyle2 = {
   width: "100%",
-  height: "100vh",
+  padding: "150px 0",
   display: "flex",
   // paddingBottom: "50px",
   justifyContent: "center",
   alignItems: "center",
   // margin: "12px 0",
   fontSize: fontSize.sm,
-
+  [mq[0]]: {
+    height: "100vh",
+    padding: "0",
+  },
   "& .script": {
     fontSize: fontSize.xl,
     marginBottom: "45px",
@@ -111,7 +120,7 @@ const mainStyle2 = {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
-    width: "300px",
+    width: "270px",
     height: "270px",
     margin: "0px 25px",
     padding: "20px 15px",

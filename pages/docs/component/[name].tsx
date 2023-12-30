@@ -70,8 +70,8 @@ export default function DocsComponent() {
 }
 
 const style = {
-  padding: "135px 30px",
-  fontSize: fontSize.sm,
+  padding: "135px 20px",
+  fontSize: fontSize.md,
   [mq[1]]: {
     padding: "0",
     fontSize: fontSize.lg,
@@ -89,9 +89,9 @@ const style = {
     },
   },
   "& .docs-title": {
-    fontSize: fontSize.lg,
+    fontSize: fontSize.xl,
     [mq[1]]: {
-      fontSize: fontSize.xl,
+      fontSize: fontSize.xl2,
     },
   },
   "& .docs-content-container": {

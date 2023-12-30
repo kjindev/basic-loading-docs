@@ -88,7 +88,7 @@ const style = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingLeft: "1.2rem",
+    padding: "1.2rem",
     [mq[0]]: {
       paddingLeft: "2rem",
     },

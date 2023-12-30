@@ -6,9 +6,23 @@ import { BounceDot, Pulse, Spinner, Wave } from "basic-loading";
 
 export default function Main() {
   return (
-    <div css={css(mainStyle, { flexDirection: "column", textAlign: "center" })}>
+    <div
+      css={css(mainStyle, {
+        flexDirection: "column",
+        textAlign: "center",
+        "& .title": {
+          flexDirection: "column",
+          [mq[0]]: {
+            flexDirection: "row",
+          },
+        },
+        "& .box-container": {
+          flexWrap: "wrap",
+        },
+      })}
+    >
       <div className={`title ${robotoBold.className}`}>
-        Basic Loading Components for React
+        <div>Basic Loading Components</div> <div>&nbsp;for React</div>
       </div>
       <div className="subTitle">
         BASIC LOADING is a library that provide loading UI components for React
@@ -67,24 +81,35 @@ const pulse = {
 
 const mainStyle = {
   width: "100%",
-  height: "100vh",
+  padding: "150px 0",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   margin: "12px 0",
-  padding: "10px",
+  [mq[0]]: {
+    height: "100vh",
+    padding: "0",
+  },
   "& .title": {
-    fontSize: fontSize.lg,
+    fontSize: fontSize.xl2,
     padding: "1rem",
     letterSpacing: "-0.025em",
+    display: "flex",
+
+    justifyContent: "center",
+    alignItems: "center",
     [mq[0]]: {
       lineHeight: "3rem",
-      fontSize: fontSize.xl,
+      // fontSize: fontSize.xl2,
+    },
+    [mq[1]]: {
+      lineHeight: "3rem",
+      fontSize: fontSize.xl3,
     },
     [mq[2]]: {
       lineHeight: "4rem",
       width: maxWidth,
-      fontSize: fontSize.xl2,
+      fontSize: fontSize.xl4,
     },
   },
   "& .subTitle": {
