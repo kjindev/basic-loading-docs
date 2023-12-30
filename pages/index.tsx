@@ -3,13 +3,25 @@ import { css } from "@emotion/react";
 import Main from "./_component/pages/main/Main";
 import Main2 from "./_component/pages/main/Main2";
 import { robotoBold } from "@/util/font";
-
+import Image from "next/image";
+import Logo from "./_assets/logo.png";
+import { maxWidth, mq } from "@/util/constant";
 export default function Home() {
   return (
-    <div css={css(pageStyle, { flexDirection: "column" })}>
+    <div
+      css={css(pageStyle, {
+        flexDirection: "column",
+        "& footer": {
+          flexDirection: "column",
+        },
+      })}
+    >
       <Main />
       <Main2 />
-      <footer className={robotoBold.className}>BASIC LOADING | 2023</footer>
+      <footer>
+        <Image src={Logo} alt="logo" width="30" />
+        <div>BASIC LOADING</div>
+      </footer>
     </div>
   );
 }
@@ -26,7 +38,12 @@ const pageStyle = {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#00000010",
-    // fontSize: "1.2rem",
     paddingTop: "20px",
+    "& div": {
+      padding: "10px 0",
+    },
+    "& img": {
+      opacity: "0.9",
+    },
   },
 };

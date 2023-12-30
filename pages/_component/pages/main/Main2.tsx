@@ -92,7 +92,7 @@ const scriptBox = {
 
 const mainStyle2 = {
   width: "100%",
-  padding: "150px 0",
+  padding: "160px 0",
   display: "flex",
   // paddingBottom: "50px",
   justifyContent: "center",
@@ -100,8 +100,7 @@ const mainStyle2 = {
   // margin: "12px 0",
   fontSize: fontSize.sm,
   [mq[0]]: {
-    height: "100vh",
-    padding: "0",
+    padding: "260px 0",
   },
   "& .script": {
     fontSize: fontSize.xl,
