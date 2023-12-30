@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Menu from "../../_assets/menu.svg";
-import Close from "../../_assets/close.svg";
-import Open from "../../_assets/open.svg";
+import Menu from "../../../_assets/menu.svg";
+import Close from "../../../_assets/close.svg";
+import Open from "../../../_assets/open.svg";
 
 import { css } from "@emotion/react";
 
