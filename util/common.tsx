@@ -1,13 +1,20 @@
-import { Interpolation, Theme, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { shadow } from "./constant";
-import { BoxProps, StringObject } from "./type";
+
 import { ReactNode } from "react";
+import { StringObject } from "./type";
 
-export const Box = ({ children, props }: BoxProps) => {
-  return <div css={css(style, props)}>{children}</div>;
-};
+export const Box = ({
+  children,
+  props,
+}: {
+  children?: ReactNode;
+  props?: StringObject;
+}) => {
+  const style = css(props, {
+    borderRadius: "0.75rem",
+    boxShadow: shadow,
+  });
 
-const style = {
-  borderRadius: "0.75rem",
-  boxShadow: shadow,
+  return <div css={style}>{children}</div>;
 };

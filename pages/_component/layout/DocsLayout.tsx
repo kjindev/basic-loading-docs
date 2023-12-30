@@ -26,7 +26,6 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
   ];
 
   useEffect(() => {
-    console.log(query);
     if (query) {
       const pathArray = query.split("/");
       const path = pathArray[pathArray.length - 1];
