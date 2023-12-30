@@ -1,28 +1,27 @@
 // /** @jsxImportSource @emotion/react */
-import { mq } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
 import { css } from "@emotion/react";
-
+import Main from "./_component/pages/main/Main";
+import Main2 from "./_component/pages/main/Main2";
+import { robotoBold } from "@/util/font";
+import Image from "next/image";
+import Logo from "./_assets/logo.png";
+import { maxWidth, mq } from "@/util/constant";
 export default function Home() {
   return (
-    <div css={css(pageStyle, { flexDirection: "column" })}>
-      <Intro />
-      {/* <footer className={notosans_bold.className}>BASIC LOADING</footer> */}
-    </div>
-  );
-}
-
-function Intro() {
-  return (
     <div
-      css={css(introStyle, { flexDirection: "column", textAlign: "center" })}
+      css={css(pageStyle, {
+        flexDirection: "column",
+        "& footer": {
+          flexDirection: "column",
+        },
+      })}
     >
-      <div className={`title ${notosans_bold.className}`}>
-        Basic & Simple
-        <br />
-        Loading Component
-      </div>
-      <div className="subTitle">React Loading UI Component Library</div>
+      <Main />
+      <Main2 />
+      <footer>
+        <Image src={Logo} alt="logo" width="30" />
+        <div>BASIC LOADING</div>
+      </footer>
     </div>
   );
 }
@@ -30,45 +29,21 @@ function Intro() {
 const pageStyle = {
   width: "100%",
   display: "flex",
-  height: "100vh",
   justifyContent: "center",
   alignItems: "center",
   "& footer": {
     width: "100%",
-    height: "100px",
-    fontSize: "1.2rem",
-    borderTop: "1px solid",
+    height: "200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#00000010",
     paddingTop: "20px",
-  },
-};
-
-const introStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-
-  margin: "12px 0",
-  "& .title": {
-    fontSize: fontSize.large,
-    [mq[0]]: {
-      lineHeight: "3rem",
-      fontSize: fontSize.large2,
+    "& div": {
+      padding: "10px 0",
     },
-    [mq[2]]: {
-      lineHeight: "4rem",
-      fontSize: fontSize.large3,
-    },
-  },
-  "& .subTitle": {
-    fontSize: fontSize.extraSmall,
-    padding: "0.5rem",
-    [mq[0]]: {
-      lineHeight: "3rem",
-      fontSize: fontSize.small,
-    },
-    [mq[2]]: {
-      lineHeight: "4rem",
-      fontSize: fontSize.medium,
+    "& img": {
+      opacity: "0.9",
     },
   },
 };

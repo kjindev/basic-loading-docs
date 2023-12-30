@@ -390,9 +390,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^16.18.65":
-  version: 16.18.68
-  resolution: "@types/node@npm:16.18.68"
-  checksum: 4c7e65c78bc3893ff89a0761bf18f412080486ef31a8b62d7bc1b91551c8a4218dc4bf41443450318914758c58976ac19e969fd7dce019741f085547e83d1fb7
+  version: 16.18.69
+  resolution: "@types/node@npm:16.18.69"
+  checksum: c0195c3fb2c25e81171bcf4086305dce56178cade00b85f8460e6f1ad7616394ee4287093acc66bbdc2b5389bd8487e53c02bb96acd6531fa3de6f3d31d7be5b
   languageName: node
   linkType: hard
 
@@ -449,13 +449,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:^18.2.38":
-  version: 18.2.45
-  resolution: "@types/react@npm:18.2.45"
+  version: 18.2.46
+  resolution: "@types/react@npm:18.2.46"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 4cc650c47ffb88baac29fb7a74e842e4af4a55f437086ef70250fdc75f0a5f2fcf8adc272d05ab2e00b1de6e14613296881271caee037dadf9130fdeb498c59e
+  checksum: 814cc67107e5e69501d65bfc371cc2c716665d2a3608d395a2f81e24c3a2875db28e2cad717dfb17017eabcffd1d68ee2c9e09ecaba3f7108d5b7fbb9888ebab
   languageName: node
   linkType: hard
 
@@ -767,7 +767,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    basic-loading: "npm:^1.0.1"
+    basic-loading: "npm:^2.0.2"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.4"
     next: "npm:14.0.4"
@@ -778,9 +778,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"basic-loading@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "basic-loading@npm:1.0.1"
+"basic-loading@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "basic-loading@npm:2.0.2"
   dependencies:
     "@types/node": "npm:^16.18.65"
     "@types/react": "npm:^18.2.38"
@@ -788,7 +788,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^4.9.5"
-  checksum: 8735666595f81ea68200ab28aaf9ebaf0bbee019d20291e3cbb55182a41b947e7837510e6621172404e8836293cec491b939d75a9d5fd6ed9bfd345329159d57
+  checksum: 11d6c3dd49223e32f141e1e3c0d3708338816582b12f6ec7206eecf819b59d45e87c8df25ddaa4bcbdfc77c86de733a350476057eb1a127eb4a12bd2062dc85c
   languageName: node
   linkType: hard
 

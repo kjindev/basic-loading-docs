@@ -1,5 +1,5 @@
-import { shadow } from "@/util/constant";
-import { componentList } from "@/util/docs";
+import { Box } from "@/util/common";
+import { codeBlockBg, componentList, shadow } from "@/util/constant";
 import { css } from "@emotion/react";
 
 export default function CodeBlock({ title }: { title: string }) {
@@ -60,16 +60,33 @@ export default function CodeBlock({ title }: { title: string }) {
         <div>
           <code>{"  "}</code>
         </div>
-        <div>
-          <code className="italic cyan">{"     return "}</code>
-          <code className="cyan">{"<"}</code>
-          <code className="yellow">{title}</code>
-          <code className="italic purple">{" option="}</code>
-          <code className="purple">{"{"}</code>
-          <code className="">{"option"}</code>
-          <code className="purple">{"}"}</code>
-          <code className="cyan">{" />;"}</code>
-        </div>
+        {title === "Fade" || title === "Pulse" ? (
+          <div>
+            <code className="italic cyan">{"     return "}</code>
+            <code className="cyan">{"<"}</code>
+            <code className="yellow">{title}</code>
+            <code className="italic purple">{" option="}</code>
+            <code className="purple">{"{"}</code>
+            <code className="">{"option"}</code>
+            <code className="purple">{"}"}</code>
+            <code className="cyan">{">"}</code>
+            <span>LOADING</span>
+            <code className="cyan">{"</"}</code>
+            <code className="yellow">{title}</code>
+            <code className="cyan">{">;"}</code>
+          </div>
+        ) : (
+          <div>
+            <code className="italic cyan">{"     return "}</code>
+            <code className="cyan">{"<"}</code>
+            <code className="yellow">{title}</code>
+            <code className="italic purple">{" option="}</code>
+            <code className="purple">{"{"}</code>
+            <code className="">{"option"}</code>
+            <code className="purple">{"}"}</code>
+            <code className="cyan">{" />;"}</code>
+          </div>
+        )}
         <div>
           <code className="yellow">{"}"}</code>
         </div>
@@ -80,12 +97,12 @@ export default function CodeBlock({ title }: { title: string }) {
 
 const style = {
   boxShadow: shadow,
+  borderRadius: "0.75rem",
   cursor: "default",
-  backgroundColor: "#232323",
+  backgroundColor: codeBlockBg,
   letterSpacing: "0.05rem",
   color: "#f4f4f5",
   fontSize: "0.875rem",
-  borderRadius: "0.75rem",
   padding: "0.875rem 1.75rem",
   "& .cyan": { color: "#67e8f9" },
   "& .green": { color: "#bef264" },
@@ -97,9 +114,9 @@ const style = {
   "& .italic": { fontStyle: "italic" },
   "& input": {
     cursor: "line",
-    backgroundColor: "#232323",
+    backgroundColor: codeBlockBg,
     color: "white",
-    border: "#232323",
+    border: codeBlockBg,
   },
   "& input:focus": {
     outline: "none",

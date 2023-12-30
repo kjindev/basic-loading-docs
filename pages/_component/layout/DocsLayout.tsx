@@ -1,8 +1,8 @@
 import { ReactNode, useEffect, useState } from "react";
 import SideMenu from "../pages/docs/SideMenu";
 import { css } from "@emotion/react";
-import { gray, gray2, mq } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { gray, gray2, maxWidth, mq } from "@/util/constant";
+import { fontSize, robotoBold } from "@/util/font";
 import { useParams, usePathname } from "next/navigation";
 import Image from "next/image";
 import Expand from "../../_assets/expand_more.svg";
@@ -26,7 +26,6 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
   ];
 
   useEffect(() => {
-    console.log(query);
     if (query) {
       const pathArray = query.split("/");
       const path = pathArray[pathArray.length - 1];
@@ -64,7 +63,7 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
         </div>
         {isListVisible && (
           <div className="mobileMenuList">
-            <div className={`menu-title ${notosans_bold.className}`}>
+            <div className={`menu-title ${robotoBold.className}`}>
               Installation
             </div>
             <Link href="/docs/installation">
@@ -72,7 +71,7 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
             </Link>
             <div
               style={{ textDecoration: "none" }}
-              className={`menu-title ${notosans_bold.className}`}
+              className={`menu-title ${robotoBold.className}`}
             >
               Component
             </div>
@@ -102,7 +101,7 @@ const style = {
     width: "100%",
     marginTop: "60px",
     backgroundColor: gray,
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     cursor: "pointer",
     display: "flex",
     justifyContent: "space-between",
@@ -114,13 +113,13 @@ const style = {
   "& .mobileMenuList": {
     zIndex: "100",
     padding: "130px 40px",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     backgroundColor: gray2,
     width: "100%",
     height: "100vh",
   },
   "& .menu-title": {
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     margin: "0.75rem 0 0.3rem 0",
   },
   "& .text": {
@@ -129,11 +128,11 @@ const style = {
   "& .menu-content": {
     padding: "0.3rem 0 0.3rem 0.75rem",
     textDecoration: "none",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     color: "black",
   },
   "& .container": {
-    width: "1000px",
+    width: maxWidth,
   },
   "& .side-menu": {
     display: "none",

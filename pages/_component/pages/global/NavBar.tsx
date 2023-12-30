@@ -1,31 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import Light from "../../_assets/light_mode.svg";
-import Dark from "../../_assets/dark_mode.svg";
-import Menu from "../../_assets/menu.svg";
-import Close from "../../_assets/close.svg";
+
+import Menu from "../../../_assets/menu.svg";
+import Close from "../../../_assets/close.svg";
+import Open from "../../../_assets/open.svg";
 
 import { css } from "@emotion/react";
 
-import { useEffect, useState } from "react";
-import { mq, shadow, subColor2 } from "@/util/constant";
-import { fontSize, notosans, notosans_bold } from "@/util/font";
+import { maxWidth, mq, shadow, subColor2, version } from "@/util/constant";
+import { fontSize, roboto, robotoBold } from "@/util/font";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { mobileMenuState } from "@/util/state";
 
 export default function NavBar() {
-  const [mode, setMode] = useState("light");
   const mobileMenu = useRecoilValue(mobileMenuState);
   const setMobileMenu = useSetRecoilState(mobileMenuState);
-
-  const toggleMode = (event: any) => {
-    const modeName = event.target.id;
-    if (modeName === "light") {
-      //code
-    } else {
-      // code
-    }
-  };
 
   const toggleMobileMenu = (event: any) => {
     const name = event.target.id;
@@ -37,13 +26,12 @@ export default function NavBar() {
   };
   return (
     <div css={css(style, { position: "fixed" })}>
-      <div className={`${notosans.className} container`}>
-        <div className="text-container">
-          <div>
-            <Link href="/" className={`title ${notosans_bold.className}`}>
-              BASIC LOADING
-            </Link>
-          </div>
+      <div className={`${roboto.className} container`}>
+        <div className="title-container">
+          <Link href="/" className={`title ${robotoBold.className}`}>
+            BASIC LOADING
+          </Link>
+          <div className="version">v {version}</div>
           {/* <div className="link-list">
             <Link href="/introduction" className="category">
               Introduction
@@ -54,12 +42,25 @@ export default function NavBar() {
           </div> */}
         </div>
         <div className="link-list">
-          <Link href="/introduction" className="category">
-            Introduction
-          </Link>
-          <Link href="/docs/installation" className="category">
-            Docs
-          </Link>
+          {/* <div>
+            <Link href="/introduction" className="category">
+              Introduction
+            </Link>
+          </div> */}
+          <div>
+            <Link href="/docs/installation" className="category">
+              Docs
+            </Link>
+          </div>
+          <div>
+            <a
+              href="https://github.com/kjindev/basic-loading"
+              className="category"
+              target="_blank"
+            >
+              Github <Image src={Open} alt="open" id="open" />
+            </a>
+          </div>
         </div>
         <div onClick={toggleMobileMenu} className="mobile-menu">
           {mobileMenu ? (
@@ -83,31 +84,49 @@ const style = {
   alignItems: "center",
   boxShadow: shadow,
   "& .container": {
-    width: "1000px",
+    width: maxWidth,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "0 1.2rem",
+    padding: "20px",
     [mq[0]]: {
-      padding: "0 2rem",
+      paddingLeft: "20px",
     },
     [mq[2]]: {
-      padding: "0 0",
+      padding: "0",
+      paddingLeft: "0",
+    },
+  },
+  "& .title-container": {
+    display: "flex",
+    alignItems: "center",
+    "& .version": {
+      fontSize: fontSize.xs,
+      backgroundColor: "#00000018",
+      padding: "4px 8px",
+      borderRadius: "18px",
     },
   },
   "& .link-list": {
     display: "none",
     [mq[1]]: {
-      display: "inline-block",
+      // display: "inline-block",
+      display: "flex",
+      alignItems: "center",
     },
   },
   "& .title": {
-    fontSize: fontSize.medium,
-    marginRight: "1.2rem",
+    fontSize: fontSize.logo,
+    marginRight: "12px",
   },
   "& .category": {
-    fontSize: fontSize.small,
-    padding: "0 1.2rem",
+    fontSize: fontSize.sm,
+    padding: "0 1.5rem",
+    display: "flex",
+    alignItems: "center",
+  },
+  "& #open": {
+    margin: "0.3rem",
   },
   "& .mode-btn": {
     width: "25px",
