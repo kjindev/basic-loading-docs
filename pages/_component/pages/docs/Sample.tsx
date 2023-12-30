@@ -22,6 +22,7 @@ export default function Sample({ title }: PropsType) {
 
   const progressBar = {
     width: 300,
+    speed: 3,
     // bgColor: subColor2,
     // barColor: mainColor,
   };

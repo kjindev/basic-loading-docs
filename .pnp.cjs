@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
-          ["basic-loading", "npm:1.0.14"],\
+          ["basic-loading", "npm:2.0.2"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:14.0.4"],\
           ["next", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:14.0.4"],\
@@ -973,15 +973,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["basic-loading", [\
-      ["npm:1.0.14", {\
-        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/basic-loading-npm-1.0.14-a94fec4bab-10c0.zip/node_modules/basic-loading/",\
+      ["npm:2.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/basic-loading-npm-2.0.2-0b8f0a3184-10c0.zip/node_modules/basic-loading/",\
         "packageDependencies": [\
-          ["basic-loading", "npm:1.0.14"],\
+          ["basic-loading", "npm:2.0.2"],\
           ["@types/node", "npm:16.18.69"],\
           ["@types/react", "npm:18.2.46"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:a94fec4babc1228cc13329c3f7ef10f9d4b61170ab687ca3540ed734833cb5875302ec8256b6dc446b4d2ccffb3072d01ca1caacbb1fa23fde0990f2474bc609#npm:18.2.0"],\
+          ["react-dom", "virtual:0b8f0a318420fadf4b456e955f19b68fca92132311d4bbfe53405cc4aed13d3088393c036ea521f6bcfba5173f2ee94a09339f446224fad4c0aaf958c613a291#npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"]\
         ],\
         "linkType": "HARD"\
@@ -996,7 +996,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.10.4"],\
           ["@types/react", "npm:18.2.43"],\
           ["@types/react-dom", "npm:18.2.17"],\
-          ["basic-loading", "npm:1.0.14"],\
+          ["basic-loading", "npm:2.0.2"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:14.0.4"],\
           ["next", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:14.0.4"],\
@@ -3212,11 +3212,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:18.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-6e77bf0a6a/5/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
+      ["virtual:0b8f0a318420fadf4b456e955f19b68fca92132311d4bbfe53405cc4aed13d3088393c036ea521f6bcfba5173f2ee94a09339f446224fad4c0aaf958c613a291#npm:18.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-d7ba0bd039/5/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
-          ["react-dom", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:18.2.0"],\
-          ["@types/react", "npm:18.2.43"],\
+          ["react-dom", "virtual:0b8f0a318420fadf4b456e955f19b68fca92132311d4bbfe53405cc4aed13d3088393c036ea521f6bcfba5173f2ee94a09339f446224fad4c0aaf958c613a291#npm:18.2.0"],\
+          ["@types/react", "npm:18.2.46"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.0"]\
@@ -3227,11 +3227,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:a94fec4babc1228cc13329c3f7ef10f9d4b61170ab687ca3540ed734833cb5875302ec8256b6dc446b4d2ccffb3072d01ca1caacbb1fa23fde0990f2474bc609#npm:18.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-d8be2bc792/5/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
+      ["virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:18.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-6e77bf0a6a/5/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
-          ["react-dom", "virtual:a94fec4babc1228cc13329c3f7ef10f9d4b61170ab687ca3540ed734833cb5875302ec8256b6dc446b4d2ccffb3072d01ca1caacbb1fa23fde0990f2474bc609#npm:18.2.0"],\
-          ["@types/react", "npm:18.2.46"],\
+          ["react-dom", "virtual:3ec48ef9134b29d9ab2f7fb46b79585ac84f279e81e8176839024cdc099d5f5e4c78b27312aa7199fbca2470f48ad274f465656f24394359db396ba1f1691ac1#npm:18.2.0"],\
+          ["@types/react", "npm:18.2.43"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.0"]\

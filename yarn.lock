@@ -767,7 +767,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    basic-loading: "npm:^1.0.14"
+    basic-loading: "npm:^2.0.2"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.4"
     next: "npm:14.0.4"
@@ -778,9 +778,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"basic-loading@npm:^1.0.14":
-  version: 1.0.14
-  resolution: "basic-loading@npm:1.0.14"
+"basic-loading@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "basic-loading@npm:2.0.2"
   dependencies:
     "@types/node": "npm:^16.18.65"
     "@types/react": "npm:^18.2.38"
@@ -788,7 +788,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^4.9.5"
-  checksum: f5af81170e1efb4a390d4655b47328c927ee7c857c35931c3de5e96c02ea8c860e8d422566c7c99a677cf08547bc3fe6b0a86e74c157730f0a526c67931ce8b0
+  checksum: 11d6c3dd49223e32f141e1e3c0d3708338816582b12f6ec7206eecf819b59d45e87c8df25ddaa4bcbdfc77c86de733a350476057eb1a127eb4a12bd2062dc85c
   languageName: node
   linkType: hard
 

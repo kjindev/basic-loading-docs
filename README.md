@@ -24,6 +24,10 @@ This documentation was developed using the following development stacks:
 
 <br />
 
-## License
+## If you wanna clone this project...
 
-BASIC-LOADING is MIT Licensed.
+If you would clone this repository, just install **next**. (This project is made by Zero Install, so you don't have to install all packages, just add only next.)
+
+```
+yarn add next
+```
