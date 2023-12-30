@@ -60,16 +60,33 @@ export default function CodeBlock({ title }: { title: string }) {
         <div>
           <code>{"  "}</code>
         </div>
-        <div>
-          <code className="italic cyan">{"     return "}</code>
-          <code className="cyan">{"<"}</code>
-          <code className="yellow">{title}</code>
-          <code className="italic purple">{" option="}</code>
-          <code className="purple">{"{"}</code>
-          <code className="">{"option"}</code>
-          <code className="purple">{"}"}</code>
-          <code className="cyan">{" />;"}</code>
-        </div>
+        {title === "Fade" || title === "Pulse" ? (
+          <div>
+            <code className="italic cyan">{"     return "}</code>
+            <code className="cyan">{"<"}</code>
+            <code className="yellow">{title}</code>
+            <code className="italic purple">{" option="}</code>
+            <code className="purple">{"{"}</code>
+            <code className="">{"option"}</code>
+            <code className="purple">{"}"}</code>
+            <code className="cyan">{">"}</code>
+            <span>LOADING</span>
+            <code className="cyan">{"</"}</code>
+            <code className="yellow">{title}</code>
+            <code className="cyan">{">;"}</code>
+          </div>
+        ) : (
+          <div>
+            <code className="italic cyan">{"     return "}</code>
+            <code className="cyan">{"<"}</code>
+            <code className="yellow">{title}</code>
+            <code className="italic purple">{" option="}</code>
+            <code className="purple">{"{"}</code>
+            <code className="">{"option"}</code>
+            <code className="purple">{"}"}</code>
+            <code className="cyan">{" />;"}</code>
+          </div>
+        )}
         <div>
           <code className="yellow">{"}"}</code>
         </div>

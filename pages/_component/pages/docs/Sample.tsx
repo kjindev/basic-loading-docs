@@ -68,7 +68,7 @@ export default function Sample({ title }: PropsType) {
   } else if (title === "Spinner") {
     return <Spinner option={spinner} />;
   } else if (title === "Pulse") {
-    return <Pulse option={pulse} />;
+    return <Pulse option={pulse}>LOADING</Pulse>;
   } else if (title === "Wave") {
     return <Wave option={wave} />;
   } else {
