@@ -18,10 +18,11 @@ export default function OptionType({ title }: PropsType) {
           <div key={index} className="option-container">
             <span>{item.name}</span>
             <span>{item.type}</span>
-            <span>
+            <span>{item.required}</span>
+            {/* <span>
               {item.type === "string" ? `"${item.default}"` : item.default}
-            </span>
-            <span>{item.unit}</span>
+            </span> */}
+            <span>{item.defaultValue}</span>
           </div>
         ))
       ) : (

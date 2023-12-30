@@ -8,7 +8,7 @@
 
 <br />
 
-**BASIC LOADING** is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Let's check documentation and make effective loading page with BASIC LOADING!
+Hi! It's **BASIC LOADING** documentation. It is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Let's check documentation and make effective loading page with BASIC LOADING!
 
 <br />
 

@@ -56,10 +56,10 @@ export default function DocsComponent() {
           <div className="docs-content-container">
             <div className={`${robotoBold.className}`}>Option Type</div>
             <div className={`option-type ${robotoBold.className}`}>
-              <span>name</span>
-              <span>type</span>
-              <span>default</span>
-              <span>unit</span>
+              <span>Name</span>
+              <span>Type</span>
+              <span>Required</span>
+              <span>Default Value</span>
             </div>
             <OptionType title={name} />
           </div>

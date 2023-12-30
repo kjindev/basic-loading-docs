@@ -88,11 +88,12 @@ const style = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1.2rem",
+    padding: "20px",
     [mq[0]]: {
-      paddingLeft: "2rem",
+      paddingLeft: "20px",
     },
     [mq[2]]: {
+      padding: "0",
       paddingLeft: "0",
     },
   },

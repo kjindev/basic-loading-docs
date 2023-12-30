@@ -65,9 +65,9 @@ const docsStyle = {
     },
   },
   "& .doc-title": {
-    fontSize: fontSize.lg,
+    fontSize: fontSize.xl,
     [mq[1]]: {
-      fontSize: fontSize.xl,
+      fontSize: fontSize.xl2,
     },
   },
   "& .doc-content": {

@@ -70,7 +70,7 @@ const spinner = {
 };
 
 const wave = {
-  height: 30,
+  size: 30,
   color: mainColor,
 };
 
