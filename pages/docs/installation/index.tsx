@@ -12,9 +12,12 @@ export default function Docs() {
         <div className="doc-container">
           <div className="doc-category">Installation</div>
           <div className={`doc-title ${robotoBold.className}`}>Get Started</div>
-          <Code>npm install basic-loading</Code>
-          <span>Or</span>
-          <Code>yarn add basic-loading</Code>
+          <div className="doc-content">
+            <div>To install the latest version, run the following command:</div>
+            <Code>npm install basic-loading</Code>
+            <div>Or if you are using yarn:</div>
+            <Code>yarn add basic-loading</Code>
+          </div>
         </div>
       </div>
     </DocsLayout>
@@ -67,9 +70,10 @@ const docsStyle = {
       fontSize: fontSize.large2,
     },
   },
-  // "&.doc-category": {
-  //   fontsize: fontSize.small,
-  // },
+  "& .doc-content": {
+    margin: "35px 0",
+    fontsize: fontSize.small,
+  },
   // "& .doc-title": {
   //   fontsize: fontSize.large2,
   //   [mq[0]]: {
