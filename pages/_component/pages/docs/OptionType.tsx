@@ -32,10 +32,11 @@ export default function OptionType({ title }: PropsType) {
 }
 
 const style = {
-  fontSize: fontSize.extraSmall,
+  fontSize: fontSize.sm,
   boxShadow: shadow,
   padding: "0.25rem 0",
   borderRadius: "0.75rem",
+  backgroundColor: "white",
   "& .option-container": {
     display: "flex",
     width: "100%",

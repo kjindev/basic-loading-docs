@@ -74,28 +74,28 @@ const mainStyle = {
   margin: "12px 0",
   padding: "10px",
   "& .title": {
-    fontSize: fontSize.large,
+    fontSize: fontSize.lg,
     padding: "1rem",
     letterSpacing: "-0.025em",
     [mq[0]]: {
       lineHeight: "3rem",
-      fontSize: fontSize.large2,
+      fontSize: fontSize.xl,
     },
     [mq[2]]: {
       lineHeight: "4rem",
       width: maxWidth,
-      fontSize: fontSize.large3,
+      fontSize: fontSize.xl2,
     },
   },
   "& .subTitle": {
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     padding: "1rem",
     lineHeight: "2rem",
     [mq[0]]: {
-      fontSize: fontSize.small,
+      fontSize: fontSize.sm,
     },
     [mq[2]]: {
-      fontSize: fontSize.medium,
+      fontSize: fontSize.md,
     },
   },
   "& .box-container": {

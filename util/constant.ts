@@ -5,6 +5,7 @@ export const subColor1 = "#84B4D4";
 export const subColor2 = "#BAD5E8";
 export const gray = "#F1F5F9";
 export const gray2 = "#F8FAFc";
+export const codeBlockBg = "#232323";
 
 export const maxWidth = "1200px";
 export const version = "2.0.1";

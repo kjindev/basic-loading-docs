@@ -101,7 +101,7 @@ const style = {
     width: "100%",
     marginTop: "60px",
     backgroundColor: gray,
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     cursor: "pointer",
     display: "flex",
     justifyContent: "space-between",
@@ -113,13 +113,13 @@ const style = {
   "& .mobileMenuList": {
     zIndex: "100",
     padding: "130px 40px",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     backgroundColor: gray2,
     width: "100%",
     height: "100vh",
   },
   "& .menu-title": {
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     margin: "0.75rem 0 0.3rem 0",
   },
   "& .text": {
@@ -128,7 +128,7 @@ const style = {
   "& .menu-content": {
     padding: "0.3rem 0 0.3rem 0.75rem",
     textDecoration: "none",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     color: "black",
   },
   "& .container": {

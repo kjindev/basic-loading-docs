@@ -92,14 +92,14 @@ const mainStyle2 = {
   justifyContent: "center",
   alignItems: "center",
   // margin: "12px 0",
-  fontSize: fontSize.small,
+  fontSize: fontSize.sm,
 
   "& .script": {
-    fontSize: fontSize.large2,
+    fontSize: fontSize.xl,
     marginBottom: "45px",
   },
   "& .box-title": {
-    fontSize: fontSize.large,
+    fontSize: fontSize.lg,
     margin: "12px",
   },
   "& .box-content": {

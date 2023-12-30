@@ -33,27 +33,28 @@ export default function DocsComponent() {
           <div className="docs-category">Component</div>
           <div className={`docs-title ${robotoBold.className}`}>{name}</div>
           <div className="docs-content-container">
-            <div className={`${robotoBold.className}`}>• Sample</div>
+            <div className={`${robotoBold.className}`}>Sample</div>
             <Box
               props={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 height: "250px",
-                margin: "0.75rem 0",
+                margin: "0.5rem 0",
+                backgroundColor: "white",
               }}
             >
               <Sample title={name} />
             </Box>
           </div>
           <div className="docs-content-container">
-            <div className={`${robotoBold.className}`}>• Code</div>
+            <div className={`${robotoBold.className}`}>Code</div>
             <div className="code-block">
               <CodeBlock title={name} />
             </div>
           </div>
           <div className="docs-content-container">
-            <div className={`${robotoBold.className}`}>• Option Type</div>
+            <div className={`${robotoBold.className}`}>Option Type</div>
             <div className={`option-type ${robotoBold.className}`}>
               <span>name</span>
               <span>type</span>
@@ -70,10 +71,10 @@ export default function DocsComponent() {
 
 const style = {
   padding: "135px 30px",
-  fontSize: fontSize.small,
+  fontSize: fontSize.sm,
   [mq[1]]: {
     padding: "0",
-    fontSize: fontSize.medium,
+    fontSize: fontSize.lg,
   },
   "& .docs-container": {
     padding: "0 0 0 0",
@@ -82,15 +83,15 @@ const style = {
     },
   },
   "& .docs-category": {
-    fontSize: fontSize.extraSmall,
+    fontSize: fontSize.xs,
     [mq[1]]: {
-      fontSize: fontSize.small,
+      fontSize: fontSize.sm,
     },
   },
   "& .docs-title": {
-    fontSize: fontSize.large,
+    fontSize: fontSize.lg,
     [mq[1]]: {
-      fontSize: fontSize.large2,
+      fontSize: fontSize.xl,
     },
   },
   "& .docs-content-container": {
@@ -101,7 +102,7 @@ const style = {
   },
   "& .option-type": {
     display: "flex",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     backgroundColor: subColor2,
     margin: "0.75rem 0",
     padding: "0.75rem 0",

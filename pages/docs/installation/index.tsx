@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 
 import DocsLayout from "../../_component/layout/DocsLayout";
 import { ReactNode } from "react";
-import { mq } from "@/util/constant";
+import { codeBlockBg, mq } from "@/util/constant";
 import { fontSize, robotoBold } from "@/util/font";
 
 export default function Docs() {
@@ -35,22 +35,22 @@ function Code({ children }: { children: ReactNode }) {
 }
 
 const codeStyle = {
-  backgroundColor: "#232323",
-  letterSpacing: "0.05rem",
+  backgroundColor: codeBlockBg,
+  // letterSpacing: "0.05rem",
   color: "#f4f4f5",
   padding: "0.05rem",
   paddingLeft: "1rem",
   borderRadius: "16px",
-  fontSize: fontSize.small,
+  fontSize: fontSize.sm,
   margin: "1rem 0rem",
 };
 
 const docsStyle = {
   padding: "135px 30px",
-  fontSize: fontSize.small,
+  fontSize: fontSize.sm,
   [mq[1]]: {
     padding: "0",
-    fontSize: fontSize.medium,
+    fontSize: fontSize.md,
   },
   "& .doc-container": {
     padding: "0 0 0 0",
@@ -59,25 +59,25 @@ const docsStyle = {
     },
   },
   "& .doc-category": {
-    fontSize: fontSize.extraSmall,
+    fontSize: fontSize.xs,
     [mq[1]]: {
-      fontSize: fontSize.small,
+      fontSize: fontSize.sm,
     },
   },
   "& .doc-title": {
-    fontSize: fontSize.large,
+    fontSize: fontSize.lg,
     [mq[1]]: {
-      fontSize: fontSize.large2,
+      fontSize: fontSize.xl,
     },
   },
   "& .doc-content": {
     margin: "35px 0",
-    fontsize: fontSize.small,
+    fontsize: fontSize.sm,
   },
   // "& .doc-title": {
-  //   fontsize: fontSize.large2,
+  //   fontsize: fontSize.xl,
   //   [mq[0]]: {
-  //     fontsize: fontSize.large,
+  //     fontsize: fontSize.lg,
   //   },
   // },
 };

@@ -1,5 +1,5 @@
 import { Box } from "@/util/common";
-import { componentList, shadow } from "@/util/constant";
+import { codeBlockBg, componentList, shadow } from "@/util/constant";
 import { css } from "@emotion/react";
 
 export default function CodeBlock({ title }: { title: string }) {
@@ -82,7 +82,7 @@ const style = {
   boxShadow: shadow,
   borderRadius: "0.75rem",
   cursor: "default",
-  backgroundColor: "#232323",
+  backgroundColor: codeBlockBg,
   letterSpacing: "0.05rem",
   color: "#f4f4f5",
   fontSize: "0.875rem",
@@ -97,9 +97,9 @@ const style = {
   "& .italic": { fontStyle: "italic" },
   "& input": {
     cursor: "line",
-    backgroundColor: "#232323",
+    backgroundColor: codeBlockBg,
     color: "white",
-    border: "#232323",
+    border: codeBlockBg,
   },
   "& input:focus": {
     outline: "none",

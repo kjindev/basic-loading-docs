@@ -16,11 +16,11 @@ export default function MobileMenu() {
     backgroundColor: "#f9fafb",
     padding: "90px 0 0 40px",
     "& .title": {
-      fontSize: fontSize.medium,
+      fontSize: fontSize.md,
       fontWeight: 700,
       paddingBottom: "14px",
     },
-    "& .category": { padding: "5px 0 5px 0", fontSize: fontSize.small },
+    "& .category": { padding: "5px 0 5px 0", fontSize: fontSize.sm },
   };
 
   return (

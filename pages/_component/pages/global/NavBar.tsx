@@ -7,16 +7,7 @@ import Open from "../../../_assets/open.svg";
 
 import { css } from "@emotion/react";
 
-import { useState } from "react";
-import {
-  gray,
-  gray2,
-  maxWidth,
-  mq,
-  shadow,
-  subColor2,
-  version,
-} from "@/util/constant";
+import { maxWidth, mq, shadow, subColor2, version } from "@/util/constant";
 import { fontSize, roboto, robotoBold } from "@/util/font";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { mobileMenuState } from "@/util/state";
@@ -97,19 +88,19 @@ const style = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "0 1.2rem",
+    paddingLeft: "1.2rem",
     [mq[0]]: {
-      padding: "0 2rem",
+      paddingLeft: "2rem",
     },
     [mq[2]]: {
-      padding: "0 0",
+      paddingLeft: "0",
     },
   },
   "& .title-container": {
     display: "flex",
     alignItems: "center",
     "& .version": {
-      fontSize: fontSize.extraSmall,
+      fontSize: fontSize.xs,
       backgroundColor: "#00000018",
       padding: "4px 8px",
       borderRadius: "18px",
@@ -124,12 +115,12 @@ const style = {
     },
   },
   "& .title": {
-    fontSize: fontSize.medium,
-    marginRight: "1.2rem",
+    fontSize: fontSize.logo,
+    marginRight: "12px",
   },
   "& .category": {
-    fontSize: fontSize.small,
-    padding: "0 1.2rem",
+    fontSize: fontSize.sm,
+    padding: "0 1.5rem",
     display: "flex",
     alignItems: "center",
   },

@@ -17,10 +17,13 @@ export const robotoExtraBold = Roboto({
 });
 
 export const fontSize = {
-  extraSmall: 12,
-  small: 14,
-  medium: 18,
-  large: 24,
-  large2: 30,
-  large3: 65,
+  xs: 12,
+  sm: 14,
+  md: 16,
+  lg: 18,
+  xl: 24,
+  xl2: 36,
+  xl3: 48,
+  xl4: 65,
+  logo: 20,
 };
