@@ -7,14 +7,20 @@ import { StringObject } from "./type";
 export const Box = ({
   children,
   props,
+  className,
 }: {
   children?: ReactNode;
   props?: StringObject;
+  className?: string;
 }) => {
   const style = css(props, {
     borderRadius: "0.75rem",
     boxShadow: shadow,
   });
 
-  return <div css={style}>{children}</div>;
+  return (
+    <div className={className} css={style}>
+      {children}
+    </div>
+  );
 };

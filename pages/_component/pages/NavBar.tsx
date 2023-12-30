@@ -51,11 +51,11 @@ export default function NavBar() {
           </div> */}
         </div>
         <div className="link-list">
-          <div>
+          {/* <div>
             <Link href="/introduction" className="category">
               Introduction
             </Link>
-          </div>
+          </div> */}
           <div>
             <Link href="/docs/installation" className="category">
               Docs
