@@ -2,8 +2,9 @@ import DocsLayout from "@/pages/_component/layout/DocsLayout";
 import CodeBlock from "@/pages/_component/pages/docs/CodeBlock";
 import OptionType from "@/pages/_component/pages/docs/OptionType";
 import Sample from "@/pages/_component/pages/docs/Sample";
+import { Box } from "@/util/common";
 import { mq, shadow, subColor2 } from "@/util/constant";
-import { fontSize, notosans_bold } from "@/util/font";
+import { fontSize, robotoBold } from "@/util/font";
 import { css } from "@emotion/react";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -30,26 +31,35 @@ export default function DocsComponent() {
       >
         <div className="docs-container">
           <div className="docs-category">Component</div>
-          <div className={`docs-title ${notosans_bold.className}`}>{name}</div>
+          <div className={`docs-title ${robotoBold.className}`}>{name}</div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Sample</div>
-            <div className="sample">
+            <div className={`${robotoBold.className}`}>Sample</div>
+            <Box
+              props={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "250px",
+                margin: "0.5rem 0",
+                backgroundColor: "white",
+              }}
+            >
               <Sample title={name} />
-            </div>
+            </Box>
           </div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Code</div>
+            <div className={`${robotoBold.className}`}>Code</div>
             <div className="code-block">
               <CodeBlock title={name} />
             </div>
           </div>
           <div className="docs-content-container">
-            <div className={`${notosans_bold.className}`}>• Option Type</div>
-            <div className={`option-type ${notosans_bold.className}`}>
-              <span>name</span>
-              <span>type</span>
-              <span>default</span>
-              <span>unit</span>
+            <div className={`${robotoBold.className}`}>Option Type</div>
+            <div className={`option-type ${robotoBold.className}`}>
+              <span>Name</span>
+              <span>Type</span>
+              <span>Required</span>
+              <span>Default Value</span>
             </div>
             <OptionType title={name} />
           </div>
@@ -60,11 +70,11 @@ export default function DocsComponent() {
 }
 
 const style = {
-  padding: "135px 30px",
-  fontSize: fontSize.small,
+  padding: "135px 20px",
+  fontSize: fontSize.md,
   [mq[1]]: {
     padding: "0",
-    fontSize: fontSize.medium,
+    fontSize: fontSize.lg,
   },
   "& .docs-container": {
     padding: "0 0 0 0",
@@ -73,15 +83,15 @@ const style = {
     },
   },
   "& .docs-category": {
-    fontSize: fontSize.extraSmall,
+    fontSize: fontSize.xs,
     [mq[1]]: {
-      fontSize: fontSize.small,
+      fontSize: fontSize.sm,
     },
   },
   "& .docs-title": {
-    fontSize: fontSize.large,
+    fontSize: fontSize.xl,
     [mq[1]]: {
-      fontSize: fontSize.large2,
+      fontSize: fontSize.xl2,
     },
   },
   "& .docs-content-container": {
@@ -92,7 +102,7 @@ const style = {
   },
   "& .option-type": {
     display: "flex",
-    fontSize: fontSize.small,
+    fontSize: fontSize.sm,
     backgroundColor: subColor2,
     margin: "0.75rem 0",
     padding: "0.75rem 0",

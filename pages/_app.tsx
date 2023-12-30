@@ -1,13 +1,13 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import NavBar from "./_component/pages/NavBar";
+import NavBar from "./_component/pages/global/NavBar";
 import { RecoilRoot } from "recoil";
-import { notosans } from "@/util/font";
-import MobileMenu from "./_component/pages/MobileMenu";
+import { roboto } from "@/util/font";
+import MobileMenu from "./_component/pages/global/MobileMenu";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={notosans.className}>
+    <main className={roboto.className}>
       <RecoilRoot>
         <NavBar />
         <MobileMenu />

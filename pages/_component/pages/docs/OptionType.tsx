@@ -1,5 +1,4 @@
-import { shadow } from "@/util/constant";
-import { componentList } from "@/util/docs";
+import { componentList, shadow } from "@/util/constant";
 import { fontSize } from "@/util/font";
 import { css } from "@emotion/react";
 
@@ -19,10 +18,11 @@ export default function OptionType({ title }: PropsType) {
           <div key={index} className="option-container">
             <span>{item.name}</span>
             <span>{item.type}</span>
-            <span>
+            <span>{item.required}</span>
+            {/* <span>
               {item.type === "string" ? `"${item.default}"` : item.default}
-            </span>
-            <span>{item.unit}</span>
+            </span> */}
+            <span>{item.defaultValue}</span>
           </div>
         ))
       ) : (
@@ -33,10 +33,11 @@ export default function OptionType({ title }: PropsType) {
 }
 
 const style = {
-  fontSize: fontSize.extraSmall,
+  fontSize: fontSize.sm,
   boxShadow: shadow,
   padding: "0.25rem 0",
   borderRadius: "0.75rem",
+  backgroundColor: "white",
   "& .option-container": {
     display: "flex",
     width: "100%",

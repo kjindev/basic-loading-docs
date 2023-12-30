@@ -17,38 +17,43 @@ interface PropsType {
 export default function Sample({ title }: PropsType) {
   const dot = {
     size: 12,
-    color: mainColor,
+    // color: mainColor,
   };
 
   const progressBar = {
     width: 300,
-    bgColor: subColor2,
-    barColor: mainColor,
+    speed: 3,
+    // bgColor: subColor2,
+    // barColor: mainColor,
+  };
+
+  const fade = {
+    speed: 1,
   };
 
   const skeleton = {
     width: "100px",
     height: "100px",
     speed: 1.2,
-    color: [subColor2, subColor1],
-    borderRadius: "20px",
+    // color: [subColor2, subColor1],
+    // borderRadius: "20px",
   };
 
   const spinner = {
     size: 50,
-    bgColor: mainColor,
-    barColor: subColor2,
-    thickness: 7,
+    // bgColor: mainColor,
+    // barColor: subColor2,
+    // thickness: 7,
   };
 
   const pulse = {
     size: 100,
-    color: subColor1,
+    // color: subColor1,
   };
 
   const wave = {
-    height: 30,
-    color: mainColor,
+    size: 30,
+    // color: mainColor,
   };
 
   if (title === "Skeleton") {
@@ -60,11 +65,11 @@ export default function Sample({ title }: PropsType) {
   } else if (title === "ProgressBar") {
     return <ProgressBar option={progressBar} />;
   } else if (title === "Fade") {
-    return <Fade speed={1.2}>LOADING</Fade>;
+    return <Fade option={fade}>LOADING</Fade>;
   } else if (title === "Spinner") {
     return <Spinner option={spinner} />;
   } else if (title === "Pulse") {
-    return <Pulse option={pulse} />;
+    return <Pulse option={pulse}>LOADING</Pulse>;
   } else if (title === "Wave") {
     return <Wave option={wave} />;
   } else {
