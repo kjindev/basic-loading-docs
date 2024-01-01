@@ -8,7 +8,7 @@ export const gray2 = "#F8FAFc";
 export const codeBlockBg = "#232323";
 
 export const maxWidth = "1200px";
-export const version = "2.0.1";
+export const version = "2.0.2";
 
 const breakpoints = [700, 900, 1200];
 export const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
